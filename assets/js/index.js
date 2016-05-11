@@ -1,5 +1,6 @@
 $(document).ready(
 	function(){
+		$(location).attr('href', "#");
 		$(".img-loader").load("../css/images/me-1.jpg", function(){
 			$(this).remove();
 			$("#loading-container").fadeOut(1000);
