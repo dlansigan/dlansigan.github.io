@@ -1,7 +1,7 @@
 $(document).ready(
 	function(){
-		$("#splash-container").animate({ left: "5vw" }, 2000);
-		$("#splash-bg-container").fadeIn(2500);
+		$("#splash-container").delay(1000).animate({ left: "5vw" }, 2000);
+		$("#splash-bg-container").delay(1000).fadeIn(2500);
 	})
 
 function scrollTo(pos){
