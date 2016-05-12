@@ -275,9 +275,45 @@ h1, h2, h3 {
 }
 
 .thumb:hover { 
+	/*height: 275px;
+	width: 275px;*/
+	cursor: pointer;
+}
+
+.highlight {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	height: 100%;
+	width: 100%;
+}
+
+.highlight:hover {
+	background-color: rgba(20, 20, 20, 0.5);
+}
+
+.contact-thumb {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;	
+}
+
+.contact-thumb:hover {
 	height: 275px;
 	width: 275px;
-	cursor: pointer;
+}
+
+#res {
+	width: 300px;
+	height: 300px;
+	background-color: rgb(66, 72, 95);
+	background-image: url("images/me-3.jpg");
+	background-size: 125%;
+	background-position: center;
+	font-size: 2.5em;
+}
+
+#res:hover {
+	height: 300px;
+	width: 300px;
 }
 
 #act1 {
@@ -317,16 +353,12 @@ h1, h2, h3 {
 }
 
 #exp1 {
-	background-color: rgb(66, 72, 95);
-}
-
-#exp2 {
 	background-image: url("images/lab.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
-#exp3 {
+#exp2 {
 	background-image: url("images/dcoc.jpg");
 	background-size: cover;
 	background-position: center;
