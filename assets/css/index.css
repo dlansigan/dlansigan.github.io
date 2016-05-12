@@ -273,7 +273,7 @@ h1, h2, h3 {
 	overflow: hidden;
 	text-align: center;
 	padding: 0;
-	font-size: 1.5em;
+	font-size: 2em;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	font-family: 'Montserrat';
@@ -297,15 +297,15 @@ h1, h2, h3 {
 }
 
 .contact-thumb {
-	height: 250px;
-	width: 250px;
+	height: 15vw;
+	width: 15vw;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;	
 }
 
 .contact-thumb:hover {
-	height: 275px;
-	width: 275px;
+	height: 17vw;
+	width: 17vw;
 }
 
 #res {
