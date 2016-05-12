@@ -88,6 +88,11 @@ h1, h2, h3 {
 	background-color: rgb(66, 72, 95);
 }
 
+#about-table {
+	width: 90%; 
+	height: 70%; 
+}
+
 #edu {
 	position: absolute;
 	height: 100vh;
@@ -233,7 +238,7 @@ h1, h2, h3 {
 }
 
 .content-container h1 {
-	font-size: 7vw;
+	font-size: 5vw;
 	color: rgb(255, 255, 255);
 }
 
@@ -247,7 +252,7 @@ h1, h2, h3 {
 	padding-right: 25px;
 	color: rgb(255, 255, 255);
 	font-size: 1em;
-	height: 275px;
+	height: 350px;
 }
 
 .text-table td {
@@ -262,8 +267,8 @@ h1, h2, h3 {
 }
 
 .thumb {
-	height: 250px;
-	width: 250px;
+	height: 300px;
+	width: 300px;
 	border-radius: 100%;
 	overflow: hidden;
 	text-align: center;
@@ -292,6 +297,8 @@ h1, h2, h3 {
 }
 
 .contact-thumb {
+	height: 250px;
+	width: 250px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;	
 }
@@ -404,9 +411,9 @@ h1, h2, h3 {
 
 .scroll-div {
 	height: 100%;
-	width: 250px;
 	padding: 10px;
 	padding-top: 0;
+	padding-bottom: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
