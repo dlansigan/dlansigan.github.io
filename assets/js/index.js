@@ -2,11 +2,11 @@ $(document).ready(
 	function(){
 		$(location).attr('href', "#");
 		$(".img-loader").load("../css/images/me-1.jpg", function(){
+			$("#loading-container").delay(1000).fadeOut(1000);
+			$("#splash-container").delay(1000).animate({ left: "5vw" }, 2000);
+			$("#splash-bg-container").delay(1000).fadeIn(2500);
+			$("body").delay(1000).css("overflow-y", "auto");
 			$(this).remove();
-			$("#loading-container").fadeOut(1000);
-			$("#splash-container").animate({ left: "5vw" }, 2000);
-			$("#splash-bg-container").fadeIn(2500);
-			$("body").css("overflow-y", "auto");
 		})
 
 	})
