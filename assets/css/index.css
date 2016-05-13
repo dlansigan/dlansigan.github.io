@@ -73,7 +73,7 @@ h1, h2, h3 {
 	top: 100vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(26, 32, 55);
+	background-color: rgb(7, 23, 52);
 }
 
 #about-table {
@@ -88,7 +88,7 @@ h1, h2, h3 {
 	top: 200vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(46, 52, 75);
+	background-color: rgb(37, 53, 82);
 }
 
 #exp {
@@ -98,7 +98,7 @@ h1, h2, h3 {
 	top: 300vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(66, 72, 95);
+	background-color: rgb(67, 83, 112);
 }
 
 #act {
@@ -108,7 +108,7 @@ h1, h2, h3 {
 	top: 400vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(86, 92, 115);
+	background-color: rgb(97, 113, 142);
 }
 
 #pro {
@@ -118,7 +118,7 @@ h1, h2, h3 {
 	top: 500vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(106, 112, 135);
+	background-color: rgb(127, 143, 172);
 }
 
 #con {
