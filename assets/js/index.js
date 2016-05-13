@@ -1,14 +1,8 @@
 $(document).ready(
 	function(){
 		$(location).attr('href', "#");
-		$(".img-loader").load("../css/images/me-1.jpg", function(){
-			$("#loading-container").delay(1000).fadeOut(1000);
-			$("#splash-container").delay(1000).animate({ left: "5vw" }, 2000);
-			$("#splash-bg-container").delay(1000).fadeIn(2500);
-			$("body").delay(1000).css("overflow-y", "auto");
-			$(this).remove();
-		})
-
+		$("#splash-container").delay(1500).animate({ left: "5vw" }, 2000);
+		$("#splash-bg-container").delay(1500).fadeIn(2500);
 	})
 
 function scrollTo(pos){

@@ -2,23 +2,11 @@ body {
 	font-family: 'Hind';
 	background-color: rgb(255, 255, 255);
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: auto;
 }
 
 h1, h2, h3 {
 	font-family: 'Montserrat';
-}
-
-.img-loader {
-	display: none;
-}
-
-#loading-container {
-    position: absolute;
-    margin: 0;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);	
 }
 
 #splash{ 
