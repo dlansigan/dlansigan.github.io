@@ -73,7 +73,7 @@ h1, h2, h3 {
 	top: 100vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(66, 72, 95);
+	background-color: rgb(26, 32, 55);
 }
 
 #about-table {
@@ -88,7 +88,7 @@ h1, h2, h3 {
 	top: 200vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(110, 125, 159);
+	background-color: rgb(46, 52, 75);
 }
 
 #exp {
@@ -98,7 +98,7 @@ h1, h2, h3 {
 	top: 300vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(207, 185, 177);
+	background-color: rgb(66, 72, 95);
 }
 
 #act {
@@ -108,7 +108,7 @@ h1, h2, h3 {
 	top: 400vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(206, 126, 117);
+	background-color: rgb(86, 92, 115);
 }
 
 #pro {
@@ -118,7 +118,7 @@ h1, h2, h3 {
 	top: 500vh;
 	left: 0;
 	margin: 0;
-	background-color: rgb(119, 82, 62);
+	background-color: rgb(106, 112, 135);
 }
 
 #con {
@@ -129,6 +129,14 @@ h1, h2, h3 {
 	left: 0;
 	margin: 0;
 	background-color: rgb(30, 30, 30);
+}
+
+#con .text-table {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #nav {
@@ -211,7 +219,7 @@ h1, h2, h3 {
 }
 
 .section-container a:hover {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgb(167, 183, 212);
 }
 
 
@@ -433,7 +441,7 @@ a {
 }
 
 a:hover{	
-	color: rgb(167, 183, 212);
+	color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 }
 
