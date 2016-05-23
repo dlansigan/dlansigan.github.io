@@ -362,6 +362,12 @@ h1, h2, h3 {
 }
 
 #exp2 {
+	background-image: url("images/windtunnel.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#exp3 {
 	background-image: url("images/dcoc.jpg");
 	background-size: cover;
 	background-position: center;
