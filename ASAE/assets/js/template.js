@@ -1,9 +1,9 @@
 $(document).ready(
 
 	function(){
-
-		var hdrHeight = 0.5*$(window).height();
 		
+		var hdrHeight = 0.5*$(window).height();
+
 
 		$(window).scroll(
 			function(){
