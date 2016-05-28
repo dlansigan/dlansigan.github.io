@@ -1,8 +1,3 @@
-$(document).ready(
-	function(){
-		$("#filter").fadeOut(2000);
-	});
-
 $("#splash-button").hover(
 	function(){
 		$("#splash-button h3").css("color", "rgb(255, 210, 0)");

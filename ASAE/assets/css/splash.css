@@ -4,7 +4,7 @@ body {
 }
 
 #container {
-	background-image: url("images/splash.jpg");
+	background-image: url("../images/splash.jpg");
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -16,18 +16,8 @@ body {
 	left: 0px;
 }
 
-a { 
+a {
 	text-decoration: none;
-}
-
-#filter{ 
-	background-color: rgb(0, 0, 0);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: 99;
 }
 
 #box-filter {
@@ -96,4 +86,20 @@ a {
 	background-color: rgba(0, 25, 65, 0.75);
 	color: rgb(255, 210, 0);
 	cursor: pointer;
+}
+
+#basic-HTML-link {
+	text-align: center;
+}
+
+#basic-HTML-link a, #basic-HTML-link a:visited {
+	font-size: 0.6em;
+	font-weight: bold;
+	color: rgb(0, 25, 65);
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#basic-HTML-link a:hover {
+	color: rgb(255, 255, 255);
 }
