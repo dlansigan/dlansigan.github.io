@@ -49,8 +49,8 @@ h1 {
 a {
   text-decoration: none;
   color: rgb(255, 210, 0);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 a:hover {
