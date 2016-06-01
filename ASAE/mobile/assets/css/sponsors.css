@@ -1,0 +1,10 @@
+#sub h1{
+	color: rgb(0, 25, 65);
+  position: relative;
+}
+
+.sponsorimg {
+  max-width: 200px;
+  padding: 20px;
+  display: inline;
+}
