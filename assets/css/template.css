@@ -88,9 +88,6 @@ a:hover, table a:hover{
   height: 100%;
   width: 100%;
   text-align: center;
-  border: 0;
-  border-spacing: 0;
-  border-collapse: collapse;
 }
 
 #button-table td{
@@ -111,7 +108,7 @@ a:hover, table a:hover{
   position: relative;
   top: 40%;
   text-align: center;
-  font-size: 1.75em;
+  font-size: 200%;
   color: rgb(255, 255, 255);
   font-family: 'Montserrat';
   -webkit-transition: all 1s;
