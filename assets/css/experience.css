@@ -1,0 +1,13 @@
+#dnf{
+  background-image: url(../images/lab.jpg);
+}
+
+#wt{
+  background-image: url(../images/windtunnel.png);
+  background-position: center 60vh;
+}
+
+#dcoc{
+  background-image: url(../images/dcoc.jpg);
+  background-position: center 31vh;
+}

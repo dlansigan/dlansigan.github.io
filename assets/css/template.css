@@ -1,0 +1,194 @@
+body {
+  font-family: 'Hind';
+  font-size: 1em;
+  color: rgb(20, 20, 20);
+  overflow: hidden;
+}
+
+table{
+  font-family: 'Hind';
+  font-size: 1em;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  color: rgb(0, 0, 0);
+  font-size: 4.5vw;
+}
+
+a, table a{
+  text-decoration: none;
+  color: rgb(0, 122, 185);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover, table a:hover{
+  color: rgb(198, 72, 52);
+}
+
+#header-container{
+  position: relative;
+  margin: auto;
+  top: 4vw;
+  width: 50vw;
+  height: 5vw;
+}
+
+#header{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#header a{
+  color: rgb(20, 20, 20);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#header a:hover{
+  color: rgb(198, 72, 52);
+}
+
+#header h1{
+  line-height: 0em;
+}
+
+#main-container{
+  position: relative;
+  margin: auto;
+  top: 5vw;
+  width: 40vw;
+  height: 70vh;
+  overflow: auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+}
+
+#footer-container{
+  position: relative;
+  margin: auto;
+  top: 12vh;
+  height: 5vh;
+  width: 40vw;
+}
+
+#footer{
+  height: 100%;
+  width: 100%;
+}
+
+#button-table{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#button-table td{
+  width: 50%;
+  padding: 0;
+}
+
+.pic-button{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  -webkit-transition: all 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pic-button-text{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat';
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.details{
+  height: 0;
+  overflow: hidden;
+}
+
+.details-text{
+  height: 50vh;
+  overflow: auto;
+  text-align: left;
+}
+
+.details-cell{
+  height: 0;
+}
+
+.button-filter{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.5s;
+  transition: 0.5s;
+}
+
+.footer-button{
+  height: 4vh;
+  width: auto;
+  -webkit-transition: all 0.5s;
+  transition: 0.5s;
+}
+
+.footer-button:hover{
+  height: 4.5vh;
+  width: auto;
+}
+
+.blue-text{
+  color: rgb(0, 122, 185);
+}
+
+.red-text{
+  color: rgb(198, 72, 52);
+}
+
+.button-filter.color1:hover{
+  background-color: rgba(0, 122, 185, 1);
+}
+
+.button-filter.color2:hover{
+  background-color: rgba(198, 72, 52, 1);
+}
+
+.bubble-pic{
+  width: 20vw;
+  height: auto;
+  border-radius: 100%;
+  float: right;
+  margin: 10px;
+}
+
+div::-webkit-scrollbar  {
+	background-color: rgba(0, 0, 0, 0);
+	width: 10px;
+}
+
+div::-webkit-scrollbar-thumb  {
+	background-color: rgba(0, 122, 185, 0.75);
+	border-radius: 50px;
+}
+
+div::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 122, 185, 1);
+}

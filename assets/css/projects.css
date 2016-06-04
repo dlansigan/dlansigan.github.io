@@ -1,0 +1,23 @@
+#os{
+  background-image: url(../images/orthoslap-2.jpg);
+}
+
+#cc{
+  background-image: url(../images/calcase-sw.png);
+}
+
+#bt{
+  background-image: url(../images/calband.jpg);
+}
+
+#st{
+  background-image: url(../images/st-1.jpg);
+}
+
+#ego{
+  background-color: rgb(20, 20, 20);
+}
+
+.pic-button-text{
+  top: 30%;
+}
