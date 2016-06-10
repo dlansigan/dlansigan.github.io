@@ -29,7 +29,7 @@ a:hover, table a:hover{
 #header-container{
   position: relative;
   margin: auto;
-  top: 1.5em;
+  top: 2em;
   width: 35em;
   height: 3em;
 }
@@ -58,7 +58,7 @@ a:hover, table a:hover{
 #main-container{
   position: relative;
   margin: auto;
-  top: 2.5em;
+  top: 3em;
   width: 30em;
   height: 70vh;
   overflow: auto;
