@@ -1,0 +1,10 @@
+#sub h1{
+	-webkit-transition: color .5s;
+	transition: color .5s;
+}
+.headshot {
+	max-height: 250px;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+	border-radius: 100%;
+}
