@@ -57,3 +57,13 @@ a {
 a:hover {
 	color: rgb(133, 180, 255);
 }
+
+#sub a {
+  color: rgb(133, 180, 255);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#sub a:hover {
+  color: rgb(255, 210, 0);
+}
