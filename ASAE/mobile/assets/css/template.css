@@ -67,3 +67,18 @@ a:hover {
 #sub a:hover {
   color: rgb(255, 210, 0);
 }
+
+
+div::-webkit-scrollbar  {
+	background-color: rgba(0, 0, 0, 0);
+	width: 10px;
+}
+
+div::-webkit-scrollbar-thumb  {
+	background-color: rgba(0, 25, 65, 0.75);
+	border-radius: 50px;
+}
+
+div::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 25, 65, 1);
+}
