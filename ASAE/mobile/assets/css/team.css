@@ -30,3 +30,12 @@
 	overflow: auto;
 	text-align: left;
 }
+
+.name-hdr{
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+.subhdr{
+	font-size: 1.75em;
+}
