@@ -1,0 +1,42 @@
+body{
+  overflow: hidden;
+  /*background-color: rgb(10, 10, 10);*/
+  background-image: url(../images/splash-bg.jpg);
+  background-size: cover;
+  font-family: 'Playfair Display';
+}
+
+#title-container{
+  position: relative;
+  top: -0.3em;
+  left: 0.2em;
+  width: 2em;
+  margin: auto;
+  font-size: 17em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#text-container{
+  position: relative;
+  height: 13em;
+  width: 17em;
+  top: -5em;
+  margin: auto;
+  font-size: 1em;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Inconsolata';
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  font-weight: bolder;
+}
