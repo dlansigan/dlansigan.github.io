@@ -1,5 +1,52 @@
+body{
+  /*background-color: rgb(10, 10, 10);*/
+  font-family: 'Playfair Display';
+}
+
+#bg-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/splash-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -99;
+}
+
+#poem-container{
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 2.5vmin;
+  font-family: 'Inconsolata';
+  vertical-align: middle;
+}
+
+#back-button a{
+  font-size: 5vmin;
+  font-family: 'Playfair Display';
+  height: 10vh;
+}
+
+#back-button a:hover{
+  letter-spacing: 1vmin;
+}
+
+#content-container{
+  position: relative;
+  margin: auto;
+  width: 40vw;
+  text-align: center;
+}
+
 a{
   text-decoration: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+h1{
+  font-family: 'Playfair Display';
 }

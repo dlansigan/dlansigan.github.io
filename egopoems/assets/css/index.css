@@ -1,19 +1,6 @@
 body{
-  overflow: hidden;
-  /*background-color: rgb(10, 10, 10);*/
-  font-family: 'Playfair Display';
-}
-
-#body-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../images/splash-bg.jpg);
-  background-size: cover;
-  background-position: center;
-}
+    overflow: hidden;
+  }
 
 #splash-container{
   position: absolute;

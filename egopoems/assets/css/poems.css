@@ -1,0 +1,16 @@
+.category-box{
+  height: 50vmin;
+  width: 50vmin;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 5vmin;
+  margin: 5vmin;
+  padding: 2vmin;
+}
+
+h1{
+  line-height: 0;
+}
+
+a:hover{
+  font-style: italic;
+}
