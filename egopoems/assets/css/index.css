@@ -1,29 +1,47 @@
 body{
   overflow: hidden;
   /*background-color: rgb(10, 10, 10);*/
+  font-family: 'Playfair Display';
+}
+
+#body-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   background-image: url(../images/splash-bg.jpg);
   background-size: cover;
-  font-family: 'Playfair Display';
+  background-position: center;
+}
+
+#splash-container{
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  top: 18.5vh;
 }
 
 #title-container{
   position: relative;
-  top: -0.3em;
   left: 0.2em;
   width: 2em;
-  margin: auto;
-  font-size: 17em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 45vmin;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  line-height: 0;
 }
 
 #text-container{
   position: relative;
-  height: 13em;
-  width: 17em;
-  top: -5em;
-  margin: auto;
-  font-size: 1em;
+  top: 30vmin;
+  height: 33vmin;
+  width: 55vmin;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5vmin;
   vertical-align: middle;
   text-align: center;
   font-family: 'Inconsolata';
