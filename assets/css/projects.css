@@ -16,6 +16,7 @@
 
 #ego{
   background-image: url(../images/ego.jpg);
+  background-position: bottom;
 }
 
 .pic-button-text{
