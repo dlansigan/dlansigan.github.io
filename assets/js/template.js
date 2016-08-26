@@ -1,3 +1,4 @@
+
 $(".expand-button").click(
   function(){
     var activeDetails = $(this).attr("value");
