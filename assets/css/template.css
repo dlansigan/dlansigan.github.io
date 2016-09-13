@@ -183,6 +183,30 @@ a:hover, table a:hover{
   margin: 10px;
 }
 
+#side-header-pic{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/me.jpeg');
+  background-size: cover;
+}
+
+#side-header-table{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#side-header-table td{
+  width: 50%;
+}
+
+#table-text-container{
+  height: 100%;
+  overflow: auto;
+}
+
 div::-webkit-scrollbar  {
 	background-color: rgba(0, 0, 0, 0);
 	width: 10px;
