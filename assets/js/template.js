@@ -13,3 +13,16 @@ $(".expand-button").click(
     $(".details").not(activeDetails).animate({ height: "0"}, 1000);
   }
 );
+
+$(".expand-button-x").click(
+  function(){
+    var activeDetails = $(this).attr("value");
+    if( $(activeDetails).width() == 0 ){
+      $(activeDetails).animate({ width: "50%"}, 1000);
+    }
+    else{
+      $(activeDetails).animate({ height: "0"}, 1000);
+    }
+    $(".details").not(activeDetails).animate({ width: "0"}, 1000);
+  }
+);
