@@ -2,12 +2,12 @@
   width: 65vw;
 }
 
-#side-header-pic {
-  height: 30vw;
-  width: 30vw;
-}
-
-#table-text-container {
-  height: 30vw;
-  width: 33vw;
+#side-header-pic{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/about-me.jpg');
+  background-size: cover;
+  background-position: center;
 }

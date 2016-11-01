@@ -183,15 +183,6 @@ a:hover, table a:hover{
   margin: 10px;
 }
 
-#side-header-pic{
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url('../images/me.jpeg');
-  background-size: cover;
-}
-
 #side-header-table{
   height: 100%;
   padding: 0;
@@ -205,6 +196,7 @@ a:hover, table a:hover{
 #table-text-container{
   height: 100%;
   overflow: auto;
+  padding-left: 10px;
 }
 
 div::-webkit-scrollbar  {
