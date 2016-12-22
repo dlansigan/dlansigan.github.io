@@ -14,6 +14,15 @@
   background-image: url(../images/calband.jpg);
 }
 
+#cat{
+  background-image: url(../images/sewickley.jpg);
+}
+
+#ich{
+  background-image: url(../images/ichiban2.jpg);
+  background-position: center;
+}
+
 #st{
   background-image: url(../images/st-1.jpg);
 }
