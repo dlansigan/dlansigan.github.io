@@ -4,7 +4,7 @@
 }
 
 #exp{
-  background-image: url(../images/exp-button.png);
+  background-image: url(../images/exp-button.jpg);
 }
 
 #act{
@@ -13,6 +13,6 @@
 }
 
 #pro{
-  background-image: url(../images/pro-button.png);
+  background-image: url(../images/pro-button.jpg);
   background-position: center 25%;
 }
