@@ -1,4 +1,26 @@
+$(document).ready(
 
+	function(){
+
+		$(window).scroll(
+			function(){
+
+				var scrollFactor = $("body").scrollTop() / $(window).height();
+				var opacityVal = 1*scrollFactor + 0;
+				$("#foreground-filter").css("opacity", opacityVal);
+			}
+
+		)
+	})
+$("#scrolltotop").click(
+	function(){
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	})
+
+$("#scrolltotop").hover(
+	function(){
+		$(this).css("cursor", "pointer");
+	})
 $(".expand-button").click(
   function(){
     var activeDetails = $(this).attr("value");

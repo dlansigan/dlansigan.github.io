@@ -1,13 +1,163 @@
-#main-container {
-  width: 65vw;
-}
-
-#side-header-pic{
+#page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url('../images/about-me.JPG');
+}
+#background-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.25;
+}
+#foreground-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+}
+#header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  background-image: url('../images/about.jpg');
+  background-size: cover;
+  background-position: top;
+  color: rgb(255, 255, 255);
+  font-size: 6em;
+  font-family: 'Montserrat';
+}
+#header-text {
+  position: relative;
+  top: 35%;
+  width: 5em;
+  height: 2em;
+  margin: auto;
+  text-align: center;
+}
+#main-container {
+  position: absolute;
+  top: 30em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#main {
+  position: relative;
+  top: 0;
+  margin: auto;
+  width: 40em;
+  padding: 2em;
+  text-align: justify;
+}
+#main h1 {
+  font-size: 4em;
+  text-align: center;
+  border-bottom: rgb(0, 0, 0) 0.05em solid;
+  padding-bottom: 0.5em;
+}
+#nav-table-container {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  height: 1em;
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+#nav-table {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+#footer-container {
+  position: relative;
+  height: 5em;
+  width: 53.333em;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+  border-top: rgb(0, 0, 0) 1px solid;
+  font-size: 0.75em;
+}
+.image-table {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+.smbutt {
+  height: 2em;
+  width: 7em;
+  text-align: center;
+  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+  border-bottom: rgba(255, 255, 255, 0) 0px solid;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.smbutt:hover {
+  cursor: pointer;
+  border-bottom: rgba(255, 255, 255, 1) 3px solid;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.butttxt {
+  position: relative;
+  top: 0.4em;
+}
+.cimg {
+  border-radius: 100%;
+  height: 12em;
+  width: 12em;
+}
+#about-img-1 {
+  background-image: url('../images/about-img-1.jpg');
   background-size: cover;
   background-position: center;
+}
+#about-img-2 {
+  background-image: url('../images/about-img-2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+#about-img-3 {
+  background-image: url('../images/about-img-3.JPG');
+  background-size: cover;
+  background-position: center;
+}
+#follownav-container {
+  position: fixed;
+  top: 90%;
+  right: 2em;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  z-index: 99;
+  text-align: right;
+}
+#follownav-container .smbutt{
+  border: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  width: 5em;
+  height: 0.5em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  text-align: right;
+}
+#follownav-container .smbutt:hover {
+  border: 0;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }

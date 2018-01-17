@@ -1,0 +1,18 @@
+#abo{
+  background-image: url(../images/about-button.jpg);
+  background-position: center 5%;
+}
+
+#exp{
+  background-image: url(../images/exp-button.jpg);
+}
+
+#act{
+  background-image: url(../images/act-button.jpg);
+  background-position: center 40%;
+}
+
+#pro{
+  background-image: url(../images/pro-button.jpg);
+  background-position: center 25%;
+}
