@@ -69,9 +69,17 @@
   </div>
   <div id="main-container">
     <div id="main">
-      <h1>Onera M6 on OpenFOAM</h1>
-      <b>This project is in progress.</b>
-      <p>NASA's Onera M6 wing is a common CFD validation case. Many tutorials exist for this case on common CFD software like ANSYS. However, few or none exist for OpenFOAM. My goal for this project is to run a good simulation for the Onera M6 wing on OpenFOAM and create a comprehensive tutorial for it to be posted on this website later.</p>
+      <h1>Using a CNN and Fourier Transform to Predict Airfoil Force Coefficients</h1>
+      <b>This project is in progress. Research is currently being done in the <a target="_blank" href="http://cfd.me.berkeley.edu/">CFD Lab at UC Berkeley</a>.</b>
+      <p>The convolutional neural network (CNN) is a powerful tool used in complex learning tasks. Recent work has shown that the CNN, most commonly used in image classification tasks, can also be applied to engineering design problems, including airfoil design. One challenge in implementing the CNN for airfoils is choosing a parameterization technique that sufficiently captures geometric information at the airfoil's boundary, where the most important physical phenomena happen. The goal of this project is to implement a Fourier transform parameterization technique and train a CNN to predict force coefficients on two dimensional airfoils. The CNN in its current state can achieve high r2 scores, but improvements to the network architecture can lead to more accurate results. The results are proof of concept that the CNN coupled with the proposed Fourier transform parameterization can produce high  prediction accuracies.</p>
+      <BR>
+      <center>
+      <img src="assets/images/cnn-proj-img-3.JPG" style="width: 100%;">
+      <BR>
+      <img src="assets/images/results_cl.JPG" style="width: 30%;">
+      <img src="assets/images/results_cd.JPG" style="width: 30%;">
+      <img src="assets/images/results_cm.JPG" style="width: 30%;">
+      </center>
       <h1>SAE West Competition Airplane</h1>
       <p>Every year, UC Berkeley's <a href="http://asae.berkeley.edu" target="_blank">ASAE</a> team, designs and manufactures remote controlled airplanes for the international SAE West competition. Design begins with engineering analysis to choose airfoils for the wing and empennage and determine the geometries of each part of the plane. Next, we build and test fly prototypes of our planes. From the prototype flight data and after more analysis, we finalize our design and build two airplanes for the competition.</p>
       <b>2017</b>
@@ -101,7 +109,10 @@
       <h1>Ichiban</h1>
       <b>Design Innovation 22 Project</b>
       <p>Ichiban is a crawling and wiggling robot that is controlled via Bluetooth. The robot, made of laser cut wood, moves primarily by pushing itself across the floor with its arm, which moves via a high-torque servo motor. It can also move by "wiggling" via a continuous servo motor attached to the robot's base, which is also how it turns. The code and electronics were done with Arduino and an Adafruit Bluefruit LE SPI Friend.</p>
-      <p><a href="https://www.youtube.com/watch?v=B8-_1W0Ikfo" target="_blank">Click here</a> to see Ichiban in action.</p>
+      <BR>
+      <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/B8-_1W0Ikfo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </center>
       <BR>
       <BR>
       <h1>CalCase</h1>
