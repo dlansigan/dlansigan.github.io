@@ -1,31 +1,25 @@
-#main {
-  left: 25%;
-  width: 50%;
-}
 #header-img-container {
-  height: 33%;
+  width: 42em;
+  height: 16em;
 }
-.main-header-img {
-  width: 45%;
+#main-header-img {
+  width: auto;
 }
 #header-img-1 {
-  width: 100%;
-  height: 100%;
   background-image: url(../images/me-1.jpg);
   background-size: cover;
   background-position: center;
 }
 #header-img-2 {
-  width: 100%;
-  height: 100%;
   background-image: url(../images/me-2.jpg);
   background-size: cover;
   background-position: top;
 }
 #header-img-3 {
-  width: 100%;
-  height: 100%;
   background-image: url(../images/me-3.jpg);
   background-size: cover;
   background-position: center;
+}
+#body-container {
+  width: 50%;
 }
