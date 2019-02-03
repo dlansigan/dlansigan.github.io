@@ -38,10 +38,14 @@ body {
 #nav-container {
   position: relative;
   margin:auto;
-  width: 80%;
+  width: 40%;
   height: 2em;
   margin-bottom: 2em;
   text-align: center;
+  border-top: 0.15em solid black;
+  padding-top: 1em;
+  margin-top: 2em;
+  font-size: 1.25em;
 }
 #nav-table {
   width: 100%;
@@ -60,7 +64,7 @@ body {
   border-top: 0.2em solid black;
   text-align: center;
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 2em;
   font-size: 0.75em;
 }
 h1 {

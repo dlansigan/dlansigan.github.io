@@ -6,21 +6,23 @@
   text-align: right;
 }
 #nav-container {
-  position: absolute;
-  top: 17em;
+  position: relative;
+  width: 25%;
+  margin: 0;
+  left: 25%;
+  margin-top: 2em;
+  text-align: center;
+}
+#header-name-container {
+  position: relative;
+  margin: 0;
+  top:1em;
   width: 25%;
   left: 25%;
   text-align: left;
 }
-#header-name-container {
-  position: absolute;
-  top:1em;
-  width: 25%;
-  left: 25%;
-  text-align: left
-}
 #body-container {
-  top:19em;
+  top:1em;
   width: 50%;
 }
 h1 {
