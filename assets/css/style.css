@@ -37,14 +37,14 @@ body {
 #body-container {
   margin: auto;
   position: relative;
-  top: 1em;
+  top: 0em;
   width: 80%;
   font-size: 1.25em;
 }
 .nav-container {
   position: relative;
   margin:auto;
-  width: 40%;
+  width: 50%;
   height: 2em;
   margin-bottom: 2em;
   text-align: center;
