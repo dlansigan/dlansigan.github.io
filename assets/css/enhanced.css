@@ -1,28 +1,33 @@
 #header-img-container {
-  width: 42em;
-  height: 16em;
+  width: 25%;
+  position: absolute;
+  right: 25%;
+  top:2em;
+  text-align: right;
 }
-#main-header-img {
-  width: auto;
+#nav-container {
+  position: absolute;
+  top: 17em;
+  width: 25%;
+  left: 25%;
+  text-align: left;
 }
-#header-img-1 {
-  background-image: url(../images/me-1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#header-img-2 {
-  background-image: url(../images/me-2.jpg);
-  background-size: cover;
-  background-position: top;
-}
-#header-img-3 {
-  background-image: url(../images/me-3.jpg);
-  background-size: cover;
-  background-position: center;
+#header-name-container {
+  position: absolute;
+  top:1em;
+  width: 25%;
+  left: 25%;
+  text-align: left
 }
 #body-container {
+  top:23em;
   width: 50%;
 }
 h1 {
   font-size: 3em;
+  text-align: left
+}
+h2 {
+  font-size: 1.5em;
+  text-align: left
 }
