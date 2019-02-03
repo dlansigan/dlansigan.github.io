@@ -10,20 +10,26 @@ body {
   width: 100%;
   overflow: auto;
 }
+#mobile-header-container {
+  display: block;
+}
+#desktop-header-container {
+  display: none;
+}
 #header-name-container {
   position: relative;
   width: 80%;
   height: auto;
   margin: auto;
 }
-#header-img-container {
+.header-img-container {
   top: 1em;
   width: 100%;
   margin: auto;
   position: relative;
   text-align: center;
 }
-#header-img-container img {
+.header-img-container img {
   border-radius: 100%;
   width: 20em;
   height: 20em;
@@ -35,7 +41,7 @@ body {
   width: 80%;
   font-size: 1.25em;
 }
-#nav-container {
+.nav-container {
   position: relative;
   margin:auto;
   width: 40%;
@@ -46,16 +52,6 @@ body {
   padding-top: 1em;
   margin-top: 2em;
   font-size: 1.25em;
-}
-#nav-table {
-  width: 100%;
-  border-top: 0.15em solid black;
-  /* border-bottom: 0.15em solid black; */
-  border-color: rgba(0, 0, 0,0.9);
-  table-layout: fixed;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  padding-top: 1em;
 }
 #footer-container {
   position: relative;
@@ -84,7 +80,7 @@ h3 {
   font-family: Montserrat;
   margin: auto;
   width: 4em;
-  border-bottom: 0.2em solid rgba(0, 0, 0,0.9);
+  border-bottom: 0.15em solid rgba(0, 0, 0,0.9);
   line-height: 1.5em;
   margin-bottom: 0.5em;
 }
