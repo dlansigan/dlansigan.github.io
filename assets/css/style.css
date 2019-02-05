@@ -50,7 +50,7 @@ body {
   position: relative;
   top: 0em;
   width: 80%;
-  font-size: 1.25em;
+  font-size: 1.15em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   padding-left: 1em;
@@ -71,7 +71,7 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 2em;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 #footer-container {
   position: relative;
@@ -114,7 +114,4 @@ a {
 a:hover {
   /* color: rgba(20, 63, 123,0.5); */
   border-bottom: 0.2em solid black;
-}
-#nav-table a {
-  font-size: 1em;
 }
