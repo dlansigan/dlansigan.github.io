@@ -1,106 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<HTML>
+<HEAD>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Import fonts-->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind" />
-    <title>Dana Lynn Lansigan - Research - Gradient Based Shape Optimization with Deep Learning</title>
-  </head>
-  <body>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="assets/css/enhanced.css" media="screen  and (min-width: 65em)" />
-    <!-- [if (lt IE 9)&(!IEMobile)]>
-    <link rel="stylesheet" type="text/css" href="enhanced.css" />
-    <![endif] -->
-    <div id="main-container">
-      <div id="mobile-header-container">
-        <div id="header-name-container">
-          <h1>Neural Network Powered Adjoint Methods</h1>
-          <h2>
-            <a href="http://dlansigan.github.io/">Dana Lynn Ona Lansigan</a>,
-            <a href="http://www.maxjiang.ml/" target="_blank">Chiyu "Max" Jiang</a>,
-            <a href="https://www.me.berkeley.edu/people/faculty/philip-s-marcus" target="_blank">Philip Marcus</a>
-           </h2>
-          <h2><a href="http://meetings.aps.org/Meeting/DFD18/Session/F32.2" target="_blank">Link</a></h2>
-        </div>
-        <div class="header-img-container">
-          <img src="assets/images/ddsl_airfoil.gif">
-        </div>
-        <div class="nav-container">
-          <a href="research.html">Back to Research</a>
-        </div>
-      </div>
-      <div id="desktop-header-container">
-        <table id="header-table" cellpadding="10">
-          <tbody>
-            <tr>
-              <td>
-                <div class="header-img-container">
-                <img src="assets/images/ddsl_airfoil.gif">
-                </div>
-              </td>
-              <td>
-                <h1>Neural Network Powered Adjoint Methods</h1>
-                <h2>
-                  <a href="http://dlansigan.github.io/">Dana Lynn Ona Lansigan</a>,
-                  <a href="http://www.maxjiang.ml/" target="_blank">Chiyu "Max" Jiang</a>,
-                  <a href="https://www.me.berkeley.edu/people/faculty/philip-s-marcus" target="_blank">Philip Marcus</a>
-                 </h2>
-                <h2><a href="http://meetings.aps.org/Meeting/DFD18/Session/F32.2" target="_blank">Link</a></h2>
-                <div class="nav-container">
-                  <a href="research.html">Back to Research</a>
-                </div>
-              </td>
-            </tr>
-        </tbody>
-        </table>
-      </div>
-        <div id="body-container">
-          <span class="abs-header"><h3>Abstract</h3></span>
-          <p>
-            Recent work has shown that Neural Networks, especially Convolutional Neural Networks (CNNs), can serve as powerful surrogate models for physical processes regarding input shapes.
-            However, two major issues stand in the way of deep learning based shape optimization using prediction from these surrogate models: how to represent shape functions to feed to the networks, and how to efficiently and accurately compute gradients of the predicted output quantity of interest with respect to the input shape coordinates for optimization.
-            In this work, we present a pipeline for efficient shape optimization that includes an optimal shape representation based on simplex-mesh Fourier transforms, training a CNN-based surrogate model for the prediction of physical quantitates, and a method for backpropagating gradients into original shape coordinates.
-            We illustrate the effectiveness of the methodology with a case study for 2D airfoil optimization.
-          </p>
-          <p>
-          <center>
-          <img class='single-img' src="assets/images/nuft.jpg">
-          <BR>
-          <b>Figure 1:</b> Schematic of the Fourier transform of signal defined on a simplex mesh.
-          </center>
-          </p>
-          <p>
-          <center>
-          <img class='single-img' src="assets/images/ddsl_optim2.jpg">
-          <BR>
-          <b>Figure 2:</b> Schematic of deep learning model driven shape optimization pipeline.
-          </center>
-          </p>
-          <p>
-          <center>
-          <img class='single-img' src="assets/images/afnet.jpg">
-          <BR>
-          <b>Figure 3:</b> Architecture of neural network used for shape optimization.
-          </center>
-          </p>
-          <p>
-          <center>
-          <img class='single-img' src="assets/images/afnet_results.jpg">
-          <BR>
-          <b>Figure 4:</b> Lift-drag curves predicted by neural network (blue) with XFOIL CFD results (orange).
-          </center>
-          </p>
-          <BR>
-          <BR>
+  <!--Import fonts-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=B612" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <title>Dana Lynn Lansigan - APS DFD 2018 Talk</title>
+</HEAD>
+<BODY>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen, handheld" />
+<link rel="stylesheet" type="text/css" href="assets/css/enhanced.css" media="screen  and (min-width: 72em)" />
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen  and (min-width: 65em)" /> -->
 
-          <div id="footer-container">
-            Website by Dana Lynn Lansigan.
-          </div>
-        </div>
-    </div>
-  </body>
-</html>
+<div id="main-container">
+<a name="top"></a>
+<div id="small-header-container">
+  <div id="small-header-text">
+    <center><span class="emph">APS DFD 2018 Talk</span></center>
+  </div>
+</div>
+
+
+<div class ="content-container" id="dummy-2">
+</div>
+
+<div class ="content-container" id="main">
+  <!-- <div class="header-text" id="skills">Skills</div> -->
+  <table id="content-table">
+    <tr>
+      <td>
+        <a href="index.html">&#9664; Go Back</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <center>
+        <h2>Neural Network Powered Adjoint Methods - Gradient Based Shape Optimization with Deep Learning</h2>
+        <BR>
+        <i>
+        <a href="http://dlansigan.github.io/">Dana Lynn Ona Lansigan</a>,
+        <a href="http://www.maxjiang.ml/" target="_blank">Chiyu "Max" Jiang</a>,
+        <a href="https://www.me.berkeley.edu/people/faculty/philip-s-marcus" target="_blank">Philip Marcus</a>
+        </i>
+        <BR>
+        <a href="http://meetings.aps.org/Meeting/DFD18/Session/F32.2" target="_blank">Abstract Link</a>
+        </center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <center>
+          <img src="assets/images/ddsl_airfoil.gif" class="square-img">
+          <BR>
+          <b>Figure 1:</b> Optimization of an airfoil to a prescribed lift-drag ratio.
+        </center>
+      </td>
+      </tr>
+      <tr>
+      <td class="table-text-cell">
+        <center><h2>Abstract</h2></center>
+        <p>
+          Recent work has shown that Neural Networks, especially Convolutional Neural Networks (CNNs), can serve as powerful surrogate models for physical processes regarding input shapes.
+          However, two major issues stand in the way of deep learning based shape optimization using prediction from these surrogate models: how to represent shape functions to feed to the networks, and how to efficiently and accurately compute gradients of the predicted output quantity of interest with respect to the input shape coordinates for optimization.
+          In this work, we present a pipeline for efficient shape optimization that includes an optimal shape representation based on simplex-mesh Fourier transforms, training a CNN-based surrogate model for the prediction of physical quantitates, and a method for backpropagating gradients into original shape coordinates.
+          We illustrate the effectiveness of the methodology with a case study for 2D airfoil optimization.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <center>
+          <img class='plain-img' src="assets/images/nuft.jpg">
+          <BR>
+          <b>Figure 2:</b> Schematic of the Fourier transform of signal defined on a simplex mesh.
+        </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <center>
+          <img class='plain-img' src="assets/images/ddsl_optim2.jpg">
+          <BR>
+          <b>Figure 3:</b> Schematic of deep learning model driven shape optimization pipeline.
+        </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <center>
+          <img class='plain-img' src="assets/images/afnet.jpg">
+          <BR>
+          <b>Figure 4:</b> Architecture of neural network used for shape optimization.
+        </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <center>
+          <img class='plain-img' src="assets/images/afnet_results.jpg">
+          <BR>
+          <b>Figure 5:</b> Lift-drag curves predicted by neural network (blue) with XFOIL CFD results (orange).
+        </center>
+        </td>
+      </tr>
+  </table><BR><BR><BR>
+  <center><span id="top-button"><a href="#top">Back to Top</a></span><center>
+</div>
+</div>
+
+</BODY>
+</HTML>
