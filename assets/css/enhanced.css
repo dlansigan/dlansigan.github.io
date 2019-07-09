@@ -24,6 +24,10 @@ body {
   overflow-y: auto;
 }
 
+#mobile-header-container {
+  display: none;
+}
+
 #header-container {
   position: absolute;
   width: 100%;
@@ -32,6 +36,8 @@ body {
   top:0;
   left:0;
   z-index: 1;
+  display: block;
+  /* margin-top:-7em; */
 }
 
 #header-img {
