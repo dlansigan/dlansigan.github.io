@@ -207,15 +207,15 @@ body {
   background-size: cover;
 }
 #audibears {
-  background-image: url(../images/audibears.png);
+  background-image: url(../images/audibears.PNG);
   background-size: cover;
 }
 #ichiban {
-  background-image: url(../images/ichiban.png);
+  background-image: url(../images/ichiban.PNG);
   background-size: cover;
 }
 #orthoslap {
-  background-image: url(../images/orthoslap.png);
+  background-image: url(../images/orthoslap.PNG);
   background-size: cover;
 }
 
@@ -254,7 +254,6 @@ a {
 }
 
 a:hover {
-  /* color: #C9981D; */
   border-bottom: 0.1em solid #1E1F2F;
 }
 
