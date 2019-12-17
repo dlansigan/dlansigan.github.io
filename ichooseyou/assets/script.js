@@ -3,14 +3,15 @@ $(document).ready(function(){
 //   $('#footer').load('../footer-ads.html');
 
   var data;
+  // $.get("http://dlansigan.github.io/ichooseyou/assets/data/defensedata.csv");
   $.ajax({
     type: "GET",
-    url: "data/defensedata.csv",
+    url: "http://dlansigan.github.io/ichooseyou/assets/data/defensedata.csv",
     dataType: "text",
     success: function(response)
     {
     data = $.csv.toObjects(response);
-    $('#test').append('testt');
+    $('#test').append(data[0].SecondBestPokemon[1]);
     // generateHtmlTable(data);
     },
     error: function(xhr, status, error) {
