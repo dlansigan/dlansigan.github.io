@@ -9,9 +9,42 @@
     <!-- <script type="text/javascript" src="assets/script.js"></script> -->
   </head>
   <body>
-    <select id='atkType-select'></select>
-    <button onclick='getDefResults()'>Go!</button>
-    <div id='def-results'></div>
+    <div id = 'header-div'>
+      <center>
+      <h1>PoGoStIC (TM) (C) (R)</h1>
+      <i>The Pokemon Go Strategic Internet Companion</i>
+      </center>
+    </div>
+    <div id = 'best-def-div'>
+      <h2>Find Best Pokemon Vs. Attack</h2>
+      <select id='atkType-select'></select>
+      <button onclick='getDefResults()'>Go!</button>
+      <button onclick="clearTables('pkmn')">Clear</button>
+      <div id='def-results-div'>
+        <h3>0.25x Resistant Pokemon</h3>
+        <table id='best-pkmn-table'>
+        </table>
+        <BR>
+        <h3>0.5x Resistant Pokemon</h3>
+        <table id='second-best-pkmn-table'>
+        </table>
+      </div>
+    </div>
+    <div id = 'best-atk-div'>
+      <h2>Find Best Attacks Vs. Type</h2>
+      <select id='defType-select'></select>
+      <button onclick='getAtkResults()'>Go!</button>
+      <button onclick="clearTables('atk')">Clear</button>
+      <div id='atk-results-div'>
+        <h3>4x Effective Attack Type</h3>
+        <table id='best-atk-table'>
+        </table>
+        <BR>
+        <h3>2x Effective Attack Type</h3>
+        <table id='second-best-atk-table'>
+        </table>
+      </div>
+    </div>
 
   <!-- <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
   <script src="assets/jquery.csv.js"></script>
