@@ -1,0 +1,172 @@
+normal
+fighting
+flying
+poison
+ground
+rock
+bug
+ghost
+steel
+fire
+water
+grass
+electric
+psychic
+ice
+dragon
+dark
+fairy
+fighting, normal
+flying, normal
+normal, poison
+ground, normal
+normal, rock
+bug, normal
+ghost, normal
+normal, steel
+fire, normal
+normal, water
+grass, normal
+electric, normal
+normal, psychic
+ice, normal
+dragon, normal
+dark, normal
+fairy, normal
+fighting, flying
+fighting, poison
+fighting, ground
+fighting, rock
+bug, fighting
+fighting, ghost
+fighting, steel
+fighting, fire
+fighting, water
+fighting, grass
+electric, fighting
+fighting, psychic
+fighting, ice
+dragon, fighting
+dark, fighting
+fairy, fighting
+flying, poison
+flying, ground
+flying, rock
+bug, flying
+flying, ghost
+flying, steel
+fire, flying
+flying, water
+flying, grass
+electric, flying
+flying, psychic
+flying, ice
+dragon, flying
+dark, flying
+fairy, flying
+ground, poison
+poison, rock
+bug, poison
+ghost, poison
+poison, steel
+fire, poison
+poison, water
+grass, poison
+electric, poison
+poison, psychic
+ice, poison
+dragon, poison
+dark, poison
+fairy, poison
+ground, rock
+bug, ground
+ghost, ground
+ground, steel
+fire, ground
+ground, water
+grass, ground
+electric, ground
+ground, psychic
+ground, ice
+dragon, ground
+dark, ground
+fairy, ground
+bug, rock
+ghost, rock
+rock, steel
+fire, rock
+rock, water
+grass, rock
+electric, rock
+psychic, rock
+ice, rock
+dragon, rock
+dark, rock
+fairy, rock
+bug, ghost
+bug, steel
+bug, fire
+bug, water
+bug, grass
+bug, electric
+bug, psychic
+bug, ice
+bug, dragon
+bug, dark
+bug, fairy
+ghost, steel
+fire, ghost
+ghost, water
+ghost, grass
+electric, ghost
+ghost, psychic
+ghost, ice
+dragon, ghost
+dark, ghost
+fairy, ghost
+fire, steel
+steel, water
+grass, steel
+electric, steel
+psychic, steel
+ice, steel
+dragon, steel
+dark, steel
+fairy, steel
+fire, water
+fire, grass
+electric, fire
+fire, psychic
+fire, ice
+dragon, fire
+dark, fire
+fairy, fire
+grass, water
+electric, water
+psychic, water
+ice, water
+dragon, water
+dark, water
+fairy, water
+electric, grass
+grass, psychic
+grass, ice
+dragon, grass
+dark, grass
+fairy, grass
+electric, psychic
+electric, ice
+dragon, electric
+dark, electric
+electric, fairy
+ice, psychic
+dragon, psychic
+dark, psychic
+fairy, psychic
+dragon, ice
+dark, ice
+fairy, ice
+dark, dragon
+dragon, fairy
+dark, fairy
+none
