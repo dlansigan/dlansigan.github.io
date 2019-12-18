@@ -195,3 +195,15 @@ function clearTables(tableID){
   $('#best-'+tableID+'-table').html("");
   $('#second-best-'+tableID+'-table').html("");
 }
+
+function showTab(divID){
+  if (divID=='atk'){
+    document.getElementById('best-atk-div').style.display='block';
+    document.getElementById('best-def-div').style.display='none';
+  }
+  else if (divID=='def') {
+    document.getElementById('best-def-div').style.display='block';
+    document.getElementById('best-atk-div').style.display='none';
+  }
+
+}
