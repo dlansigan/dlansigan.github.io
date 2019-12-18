@@ -6,7 +6,7 @@ $(document).ready(function(){
   var atkTypes;
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/ichooseyou/assets/data/offtypes.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/offtypes.csv",
     dataType: "text",
     success: function(response)
     {
@@ -27,7 +27,7 @@ $(document).ready(function(){
   var defTypes;
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/ichooseyou/assets/data/deftypes.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/deftypes.csv",
     dataType: "text",
     success: function(response)
     {
@@ -56,7 +56,7 @@ function getDefResults() {
   var pkmnList;
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/ichooseyou/assets/data/pokemon.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/pokemon.csv",
     dataType: "text",
     success: function(response)
     {
@@ -65,7 +65,7 @@ function getDefResults() {
     var pkmnTypeList;
     $.ajax({
       type: "GET",
-      url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/ichooseyou/assets/data/deftypes.csv",
+      url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/deftypes.csv",
       dataType: "text",
       success: function(response)
       {
@@ -82,7 +82,7 @@ function getDefResultsHelper(pkmnList, pkmnTypeList, idx){
   var data;
   $.ajax({
     type: "GET",
-    url: "http://dlansigan.github.io/ichooseyou/assets/data/defensedata.csv",
+    url: "http://dlansigan.github.io/pogostic/assets/data/defensedata.csv",
     dataType: "text",
     success: function(response)
     {
@@ -115,7 +115,7 @@ function getAtkResults() {
   var atkTypeList;
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/ichooseyou/assets/data/offtypes.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/offtypes.csv",
     dataType: "text",
     success: function(response)
     {
@@ -130,7 +130,7 @@ function getAtkResultsHelper(atkTypeList, idx){
   var data;
   $.ajax({
     type: "GET",
-    url: "http://dlansigan.github.io/ichooseyou/assets/data/offensedata.csv",
+    url: "http://dlansigan.github.io/pogostic/assets/data/offensedata.csv",
     dataType: "text",
     success: function(response)
     {
