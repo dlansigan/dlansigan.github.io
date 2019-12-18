@@ -160,7 +160,13 @@ function fillDefTable(tableID,pkmnList,pkmnTypeList,bestPkmn,bestPkmnType){
       var cell = row.insertCell(0);
     }
 
-    cell.innerHTML = pkmnList[bestPkmn[i]]+'<BR><i>'+pkmnTypeList[bestPkmnType[i]]+'</i>';
+    entry_pkmn = pkmnList[bestPkmn[i]];
+    entry_type = pkmnTypeList[bestPkmnType[i]];
+    if (typeof entry_pkmn =='undefined'){
+      entry_pkmn = 'none';
+      entry_type = '';
+    }
+    cell.innerHTML = entry_pkmn+'<BR><i>'+entry_type+'</i>';
     }
 }
 
