@@ -43,7 +43,14 @@ $(document).ready(function(){
     }
     }
   });
-  // $('#test').append('test');
+
+  $('.nav-button').hover(function(){
+    $(this).css('border-color', 'rgba(255, 255, 255, .5)');
+    $(this).css('color', 'rgba(255, 255, 255, .5)');
+  }, function(){
+    $(this).css('border-color', 'rgba(0, 0, 0, 1)');
+    $(this).css('color', 'rgba(0, 0, 0, 1)');
+  })
 
 });
 
@@ -206,10 +213,14 @@ function showTab(divID){
   if (divID=='atk'){
     document.getElementById('best-atk-div').style.display='block';
     document.getElementById('best-def-div').style.display='none';
+    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.5)';
+    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.2)';
   }
   else if (divID=='def') {
     document.getElementById('best-def-div').style.display='block';
     document.getElementById('best-atk-div').style.display='none';
+    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.5)';
+    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.2)';
   }
 
 }

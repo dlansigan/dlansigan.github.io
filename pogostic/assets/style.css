@@ -1,7 +1,43 @@
+body {
+  font-family: 'Karla';
+  background-image: url('images/background.jpg');
+  background-size: auto;
+  color: white;
+  padding-bottom: 20px;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(255, 255, 255, 0.25); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  padding-bottom: -10em;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat';
+}
+
+.content-div i {
+  font-size: 0.75em;
+}
+
 .content-div {
   width: 90vw;
   text-align: center;
   margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgb(20,20,20);
+  padding-top: 0.1em;
+  margin-top: 1em;
+  margin-bottom: -100em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  min-height: 100vh;
 }
 
 table {
@@ -18,6 +54,19 @@ td {
 
 .nav-button {
   width: 7em;
+  border-radius: 1em;
+  border: 0.1em solid;
+  padding: 0.25em;
+  transition: 0.25s;
+}
+
+#best-def-button {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button:hover {
+  transition: 0.25s;
+  cursor: pointer;
 }
 
 #nav-div {
