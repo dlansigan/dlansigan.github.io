@@ -18,8 +18,24 @@ body {
   padding-bottom: -10em;
 }
 
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 h1, h2, h3 {
   font-family: 'Montserrat';
+}
+
+#header-div i {
+  font-size: 1em;
 }
 
 .content-div i {
