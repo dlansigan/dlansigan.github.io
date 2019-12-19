@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   // Set default button
-  document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.5)';
-  document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.2)';
+  document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.65)';
+  document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.3)';
 
   // Create attack type dropdown list
   var atkTypes;
@@ -257,14 +257,14 @@ function showTab(divID){
   if (divID=='atk'){
     document.getElementById('best-atk-div').style.display='block';
     document.getElementById('best-def-div').style.display='none';
-    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.5)';
-    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.2)';
+    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.65)';
+    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.3)';
   }
   else if (divID=='def') {
     document.getElementById('best-def-div').style.display='block';
     document.getElementById('best-atk-div').style.display='none';
-    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.5)';
-    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.2)';
+    document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.65)';
+    document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.3)';
   }
 
 }
