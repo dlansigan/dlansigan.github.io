@@ -27,7 +27,7 @@ $(document).ready(function(){
   var defTypes;
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/deftypes.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/offtypes.csv",
     dataType: "text",
     success: function(response)
     {
@@ -35,11 +35,16 @@ $(document).ready(function(){
     defTypes = defTypes[0];
     var i;
     const numTypes = defTypes.length;
-    for (i = 0; i < numTypes-2; i++) {
-      defType = document.getElementById('defType-select');
-      if (defTypes[i] != ' ') {
-        defType.options[defType.options.length] = new Option(defTypes[i], i)
+    for (i = 0; i < numTypes; i++) {
+      defType1 = document.getElementById('defType-select-1');
+      defType2 = document.getElementById('defType-select-2');
+      if (atkTypes[i] != ' ') {
+        defType1.options[defType1.options.length] = new Option(defTypes[i], defTypes[i]);
+        defType2.options[defType2.options.length] = new Option(defTypes[i], defTypes[i]);
+      } else {
+        defType2.options[defType2.options.length] = new Option('none', 'none');
       }
+
     }
     }
   });
@@ -116,8 +121,25 @@ function getDefResultsHelper(pkmnList, pkmnTypeList, idx){
 function getAtkResults() {
   $('#best-atk-table').html("");
   $('#second-best-atk-table').html("");
-  var defType = document.getElementById('defType-select');
-  var idx = defType.options[defType.selectedIndex].value;
+  var defType1 = document.getElementById('defType-select-1');
+  var defType2 = document.getElementById('defType-select-2');
+  var type1 = defType1.options[defType1.selectedIndex].value;
+  var type2 = defType2.options[defType2.selectedIndex].value;
+
+  type1 = type1.replace(' ','');
+  type2 = type2.replace(' ','');
+
+  if (type1 == 'none') {
+    var type = type2;
+  } else if (type2 == 'none') {
+    var type = type1;
+  } else if (type1 == type2) {
+    var type = type1;
+  } else {
+    var type = [type1, type2];
+    type.sort();
+    type = type.join('/');
+  }
 
   var atkTypeList;
   $.ajax({
@@ -128,12 +150,12 @@ function getAtkResults() {
     {
     atkTypeList = $.csv.toArrays(response);
     atkTypeList = atkTypeList[0];
-    getAtkResultsHelper(atkTypeList, idx);
+    getAtkResultsHelper(atkTypeList, type);
     }
   })
 }
 
-function getAtkResultsHelper(atkTypeList, idx){
+function getAtkResultsHelper(atkTypeList, type){
   var data;
   $.ajax({
     type: "GET",
@@ -143,6 +165,24 @@ function getAtkResultsHelper(atkTypeList, idx){
     {
     data = $.csv.toObjects(response);
 
+    finalizeAtkResults(type, data, atkTypeList);
+    }
+  });
+}
+
+function finalizeAtkResults(type, data, atkTypeList){
+  var defTypes;
+  $.ajax({
+    type: "GET",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/deftypes.csv",
+    dataType: "text",
+    success: function(response)
+    {
+    defTypes = $.csv.toArrays(response);
+    defTypes = defTypes[0];
+    defTypes = defTypes.map(str => str.replace(/\s/g, ''));
+    var idx = defTypes.findIndex(t => t == type);
+
     bestDamage = data[idx].BestDamage;
     bestDamage = parseCSVEntry(bestDamage);
 
@@ -151,6 +191,14 @@ function getAtkResultsHelper(atkTypeList, idx){
 
     fillAtkTable('best-atk-table',atkTypeList,bestDamage);
     fillAtkTable('second-best-atk-table',atkTypeList,secondBestDamage);
+    // var i;
+    // const numTypes = defTypes.length;
+    // for (i = 0; i < numTypes; i++) {
+    //   atkType = document.getElementById('atkType-select');
+    //   if (atkTypes[i] != ' ') {
+    //     atkType.options[atkType.options.length] = new Option(atkTypes[i], i)
+    //   }
+    // }
     }
   });
 }
@@ -181,14 +229,8 @@ function fillAtkTable(tableID,atkTypeList,bestAtkType){
   var table = document.getElementById(tableID);
   var i;
   for(i = 0; i<bestAtkType.length; i++){
-    if (i%2){
-      var cell = row.insertCell(1);
-    }
-    else {
       var row = table.insertRow(-1);
       var cell = row.insertCell(0);
-    }
-
     entry = atkTypeList[bestAtkType[i]];
     if (typeof entry =='undefined'){
       entry = 'none';
