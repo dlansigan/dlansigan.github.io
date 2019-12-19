@@ -38,6 +38,8 @@ h1, h2, h3 {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   min-height: 100vh;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
 table {
@@ -53,11 +55,15 @@ td {
 }
 
 .nav-button {
-  width: 7em;
+  width: 10em;
+  height: 2.5em;
   border-radius: 1em;
   border: 0.1em solid;
   padding: 0.25em;
   transition: 0.25s;
+  font-size: 0.7em;
+  /* margin-left: 0.25em;
+  margin-right: 0.25em; */
 }
 
 #best-def-button {

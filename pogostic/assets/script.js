@@ -1,6 +1,8 @@
 $(document).ready(function(){
-// $('#header').load('../header-ads.html');
-//   $('#footer').load('../footer-ads.html');
+
+  // Set default button
+  document.getElementById('best-def-button').style.background='rgba(255, 255, 255, 0.5)';
+  document.getElementById('best-atk-button').style.background='rgba(255, 255, 255, 0.2)';
 
   // Create attack type dropdown list
   var atkTypes;
