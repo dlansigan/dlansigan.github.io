@@ -40,12 +40,16 @@ $(document).ready(function(){
     for (i = 0; i < numTypes; i++) {
       defType1 = document.getElementById('defType-select-1');
       defType2 = document.getElementById('defType-select-2');
+      if (i==0) {
+        defType2.options[defType2.options.length] = new Option('none', 'none');
+      }
       if (atkTypes[i] != ' ') {
         defType1.options[defType1.options.length] = new Option(defTypes[i], defTypes[i]);
         defType2.options[defType2.options.length] = new Option(defTypes[i], defTypes[i]);
-      } else {
-        defType2.options[defType2.options.length] = new Option('none', 'none');
       }
+      // } else{
+      //   defType2.options[defType2.options.length] = new Option('none', 'none');
+      // }
 
     }
     }
