@@ -73,13 +73,13 @@ td {
 }
 
 .nav-button {
-  width: 10em;
+  width: 9.5em;
   height: 2.5em;
   border-radius: 1em;
   border: 0.1em solid;
   padding: 0.25em;
   transition: 0.25s;
-  font-size: 0.7em;
+  font-size: 1em;
   /* margin-left: 0.25em;
   margin-right: 0.25em; */
 }

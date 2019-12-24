@@ -23,13 +23,14 @@
     </div>
     <div id = 'nav-div'>
       <center>
-      <button id = 'best-def-button' onclick="showTab('def')" class='nav-button'>Pokemon vs. Attack</button>
-      <button id = 'best-atk-button' onclick="showTab('atk')" class='nav-button'>Attack vs. Pokemon</button>
+      <button id = 'best-def-button' onclick="showTab('def')" class='nav-button'>Find Pokemon</button>
+      <button id = 'best-atk-button' onclick="showTab('atk')" class='nav-button'>Find Attack</button>
       </center>
     </div>
     <div id = 'best-def-div' class='content-div'>
       <center>
       <h2>Find Best Pokemon Vs. Attack</h2>
+      <p>Choose the type of the <b>attack</b> that you will be defending against and press <b>Go!</b></p>
       <select id='atkType-select'></select>
       <button onclick='getDefResults()'>Go!</button>
       <button onclick="clearTables('pkmn')">Clear</button>
@@ -47,6 +48,7 @@
     <div id = 'best-atk-div' class='content-div'>
       <center>
       <h2>Find Best Attacks Vs. Type</h2>
+      <p>Choose the type of the <b>Pokemon</b> that you will be attacking and press <b>Go!</b></p>
       <select id='defType-select-1'></select>
       <select id='defType-select-2'></select>
       <button onclick='getAtkResults()'>Go!</button>
