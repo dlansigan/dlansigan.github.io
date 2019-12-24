@@ -100,3 +100,10 @@ td {
 select {
   width: 5em;
 }
+
+.pkmn-img {
+  width: 5em;
+  height: auto;
+  padding: none;
+  margin:none;
+}

@@ -226,8 +226,13 @@ function fillDefTable(tableID,pkmnList,pkmnTypeList,bestPkmn,bestPkmnType){
     if (typeof entry_pkmn =='undefined'){
       entry_pkmn = 'none';
       entry_type = '';
+      entry_img = '';
+    } else {
+      entry_img = "<img class='pkmn-img' src='assets/images/pkmn_images/"+entry_pkmn.replace(/ /g, '')+".png'><BR>";
     }
-    cell.innerHTML = entry_pkmn+'<BR><i>'+entry_type+'</i>';
+
+    console.log(entry_pkmn.replace(/ /g, ''));
+    cell.innerHTML = entry_img+entry_pkmn+'<BR><i>'+entry_type+'</i>';
     }
 }
 
