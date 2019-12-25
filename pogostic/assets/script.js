@@ -106,6 +106,12 @@ function getDefResultsHelper(pkmnList, pkmnTypeList, idx){
     {
     data = $.csv.toObjects(response);
 
+    bestBestPkmn = data[idx].BestBestPokemon;
+    bestBestPkmn = parseCSVEntry(bestBestPkmn);
+
+    bestBestPkmnType = data[idx].BestBestPokemonType;
+    bestBestPkmnType = parseCSVEntry(bestBestPkmnType);
+
     bestPkmn = data[idx].BestPokemon;
     bestPkmn = parseCSVEntry(bestPkmn);
 
@@ -118,6 +124,7 @@ function getDefResultsHelper(pkmnList, pkmnTypeList, idx){
     secondBestPkmnType = data[idx].SecondBestPokemonType;
     secondBestPkmnType = parseCSVEntry(secondBestPkmnType);
 
+    fillDefTable('best-best-pkmn-table',pkmnList,pkmnTypeList,bestBestPkmn,bestBestPkmnType);
     fillDefTable('best-pkmn-table',pkmnList,pkmnTypeList,bestPkmn,bestPkmnType);
     fillDefTable('second-best-pkmn-table',pkmnList,pkmnTypeList,secondBestPkmn,secondBestPkmnType);
     }
