@@ -66,6 +66,7 @@ $(document).ready(function(){
 });
 
 function getDefResults() {
+  $('#best-best-pkmn-table').html("");
   $('#best-pkmn-table').html("");
   $('#second-best-pkmn-table').html("");
   var atkType = document.getElementById('atkType-select');
@@ -100,7 +101,7 @@ function getDefResultsHelper(pkmnList, pkmnTypeList, idx){
   var data;
   $.ajax({
     type: "GET",
-    url: "http://dlansigan.github.io/pogostic/assets/data/defensedata.csv",
+    url: "https://raw.githubusercontent.com/dlansigan/dlansigan.github.io/master/pogostic/assets/data/defensedata.csv",
     dataType: "text",
     success: function(response)
     {
@@ -264,6 +265,7 @@ function parseCSVEntry(data){
 }
 
 function clearTables(tableID){
+  $('#best-best-'+tableID+'-table').html("");
   $('#best-'+tableID+'-table').html("");
   $('#second-best-'+tableID+'-table').html("");
 }
