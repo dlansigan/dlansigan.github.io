@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+.header a {
+  color: white;
+}
+
 #main-container {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -110,7 +114,7 @@ body {
 }
 
 #dummy {
-  height: 47em;
+  height: 59em;
   z-index: -101;
 }
 
