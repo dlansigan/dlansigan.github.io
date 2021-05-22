@@ -326,7 +326,7 @@ ul {
 }
 
 li::before {
-  content:'\25B6';
+  content:'-';
 }
 
 /* CONTACT */
