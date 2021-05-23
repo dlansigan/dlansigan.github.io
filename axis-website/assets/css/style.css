@@ -484,5 +484,9 @@ li::before {
   margin-top: 2em;
 }
 
+#contact-form {
+  width: 80%;
+}
+
 
 }
