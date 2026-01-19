@@ -15,7 +15,7 @@
 }
 
 body {
-  font-size: 14pt;
+  font-size: 12pt;
   font-family: var(--content-font);
   color:var(--main);
   background: var(--accent2);
@@ -40,6 +40,10 @@ a {
 
 a:hover {
   color:var(--accent3);
+}
+
+.content-text a {
+  border-bottom: solid 0.1em var(--accent3-50);
 }
 
 h2 {
@@ -118,16 +122,17 @@ div::-webkit-scrollbar-button {
   background:url('../images/header.jpg');
   background-size: cover;
   background-position: center;
-  margin: auto;
-  height: 30em;
-  width: 30em;
-  border-radius: 50%;
-  margin-top: 1em;
+  height: 25em;
+  width: 25em;
+  /* border-radius: 50%; */
+  /* margin: auto; */
+  /* margin-top: 1em;
+  margin-bottom: 0em; */
+  margin: 1em;
+  float: left;
 }
 
 .research-img{
-  height: 15em;
-  width: 15em;
   margin: auto;
 }
 
@@ -168,8 +173,12 @@ margin-bottom: 5em;
   border-collapse: collapse;
 }
 
-.responsive-table td, .table-hdr {
+.responsive-table td {
   padding: 1em;
+}
+
+.table-hdr {
+  padding: 0.5em;
 }
 
 .content-container {
@@ -665,8 +674,8 @@ margin-bottom: 5em;
   }
 
   #about-img {
-      height: 25em;
-      width: 25em;
+      height: 18em;
+      width: 18em;
   }
 
   .research-img {
@@ -751,6 +760,9 @@ margin-bottom: 5em;
   #about-img {
       height: 15em;
       width: 15em;
+      float: none;
+      margin: auto;
+      margin-bottom: 1em;
   }
 
   .research-img {
