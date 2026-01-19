@@ -3,7 +3,8 @@
   --main-50: rgba(50, 50, 50, 0.5);
   --accent1: rgba(50,50,50, 1);
   --accent1-50: rgba(50,50,50, 0.5);
-  --accent2: rgba(238,236,229, 1);
+  /* --accent2: rgba(238,236,229, 1); */
+  --accent2: rgba(255,255,255, 1);
   --accent2-50: rgba(238,236,229, 0.5);
   --accent3: rgba(180, 200, 160, 1);
   --accent3-50: rgba(180, 200, 160, 0.5);
@@ -109,7 +110,7 @@ div::-webkit-scrollbar-button {
     mix-blend-mode: difference;
 }
 
-.cotent-text {
+.content-text {
   font-size: 1.5em;
 }
 
@@ -120,9 +121,40 @@ div::-webkit-scrollbar-button {
   margin: auto;
   height: 30em;
   width: 30em;
-  /* padding-left: 5em; */
   border-radius: 50%;
   margin-top: 1em;
+}
+
+.research-img{
+  height: 15em;
+  width: 15em;
+  margin: auto;
+}
+
+#research-img-1 {
+  background:url('../images/echo_diffusion.png');
+  background-size: cover;
+  background-position: center;
+  height:25em;
+  width:25em;
+}
+#research-img-2 {
+  background:url('../images/nonlocality_rti.png');
+  background-size: cover;
+  background-position: center;
+  height:25em;
+  width:25em;
+}
+#research-img-3 {
+  background:url('../images/ddsl_airfoil.gif');
+  background-size: cover;
+  background-position: center;
+  height:25em;
+  width:25em;
+}
+
+.pub-list{
+  list-style-type: '- ';
 }
 
 .table-container {
@@ -134,6 +166,10 @@ margin-bottom: 5em;
 .responsive-table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.research-table td {
+  padding: 1em;
 }
 
 .responsive-table th, .responsive-table td {
@@ -636,6 +672,11 @@ margin-bottom: 5em;
       width: 25em;
   }
 
+  .research-img {
+      height: 15em;
+      width: 15em;
+  }
+
 
     #research-cell-1 {
       font-weight: 200;
@@ -714,6 +755,12 @@ margin-bottom: 5em;
       height: 15em;
       width: 15em;
   }
+
+  .research-img {
+      height: 15em;
+      width: 15em;
+  }
+
   .content-text {
     font-size: 1em;
   }
