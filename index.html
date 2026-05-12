@@ -1,561 +1,252 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!--Import fonts-->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <script src="assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Dana Lynn Lavacot</title>
-</HEAD>
-<BODY>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<!--<link rel="stylesheet" type="text/css" href="assets/css/style-small.css" media="screen  and (max-device-width: 300px)" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen  and (min-width: 65em)" /> -->
+</head>
+<body>
+  <div id="main-container">
+    <div id="top"></div>
 
-<div id="main-container">
-<a name="top"></a>
+    <div id="splash-container">
+      <video autoplay muted loop playsinline id="splash-video">
+        <source src="assets/videos/splash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="splash-text">
+        <h1 class="block-text">DANA LAVACOT</h1>
+        <p>Postdoctoral Researcher @ WashU</p>
+        <p>Stanford Ph.D., UC Berkeley B.S.</p>
+        <p>Computational Fluid Dynamicist</p>
+        <p>3D Printing Hobbyist</p>
 
-<div id="splash-container">
-  <video autoplay muted loop playsinline id="splash-video">
-    <source src="assets/videos/splash.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div id="splash-text">
-    <span class="block-text"><h1>DANA LAVACOT</h1></span>
-    <BR>
-    <p>Postdoctoral Researcher @ WashU</p>
-    <p>Stanford Ph.D., UC Berkeley B.S.</p>
-    <p>Computational Fluid Dynamicist</p>
-    <p>3D Printing Hobbyist</p>
-    <BR>
-    <a href= "mailto: dlol@stanford.edu"><img src="assets/images/email.png" class="social-icon icon-button"></img></a>
-    <a href="https://www.linkedin.com/in/dlansigan/" target="_blank"><img src="assets/images/linkedin.png" class="social-icon icon-button"></img></a>
-    <a href="https://www.instagram.com/thelittle3dprints/" target="_blank"><img src="assets/images/insta.png" class="social-icon icon-button"></img></a>
-    <BR><BR><BR>
-    <center>
-    <a href="#about" class="button"><span class="button-container">
-        About
-    </span></a>
-    <a href="#research" class="button"><span class="button-container">
-        Research
-    </span></a>
-    <a href="#projects" class="button"><span class="button-container">
-        3D Printing
-    </span></a>
-    <a href="#skills" class="button"><span class="button-container">
-        Skills
-    </span></a>
-    <a href="assets/docs/dlavacot-CV.pdf" target="_blank" class="button"><span class="button-container">
-        CV
-    </span></a>
-    </center>
-    <div id="info-button">
-        <a href="#footer" class="icon-button"><img src="assets/images/info.png"></a>
+        <div class="social-row">
+          <a href="mailto: dlol@stanford.edu"><img src="assets/images/email.png" class="social-icon icon-button" alt="Email"></a>
+          <a href="https://www.linkedin.com/in/dlansigan/" target="_blank" rel="noreferrer"><img src="assets/images/linkedin.png" class="social-icon icon-button" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/thelittle3dprints/" target="_blank" rel="noreferrer"><img src="assets/images/insta.png" class="social-icon icon-button" alt="Instagram"></a>
+        </div>
+
+        <div class="button-row">
+          <a href="#about" class="button"><span class="button-container">About</span></a>
+          <a href="#research" class="button"><span class="button-container">Research</span></a>
+          <a href="#projects" class="button"><span class="button-container">3D Printing</span></a>
+          <a href="#skills" class="button"><span class="button-container">Skills</span></a>
+          <a href="assets/docs/dlavacot-CV.pdf" target="_blank" rel="noreferrer" class="button"><span class="button-container">CV</span></a>
+        </div>
+
+        <div id="info-button">
+          <a href="#footer" class="icon-button"><img src="assets/images/info.png" alt="Footer information"></a>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div class="content-container" id="main">
+      <div class="header-text header-left" id="about"><span>About Me</span></div>
 
-</div>
+      <div class="table-container">
+        <table class="responsive-table">
+          <tbody>
+            <tr>
+              <td>
+                <div id="about-text" class="content-text">
+                  <img
+                    id="about-img"
+                    src="assets/images/header.jpg"
+                    alt="Dana Lavacot portrait"
+                  >
+                  I am a motivated scientific problem solver with interests in scientific machine learning and computational modeling.
+                  <br><br>
+                  Currently, I am a Postdoctoral Research Associate at Washington University in St. Louis with the <a href="https://sites.wustl.edu/konglab/" target="_blank" rel="noreferrer">Computational Cardiac Mechanics and AI Lab</a>, where I am working on scientific machine learning for cardiovascular flow.
+                  I am developing uncertainty-aware and physics-informed machine learning methods for cardiovascular flow reconstruction from echocardiograms.
+                  The goal of this work is to enhance physical information obtained from medical imaging that can better inform patient-specific diagnosis and treatment planning.
+                  <br><br>
+                  I earned my B.S. in mechanical engineering at UC Berkeley in 2019, where I studied aerodynamic shape optimization with deep learning in the <a href="https://cfd.me.berkeley.edu/" target="_blank" rel="noreferrer">CFD Lab</a>.
+                  At Stanford University, I earned my M.S. in 2021 and my Ph.D. in 2025 under the advisement of <a href="https://manigroup.sites.stanford.edu/" target="_blank" rel="noreferrer">Ali Mani</a>.
+                  My <a href="http://purl.stanford.edu/gx711gy3634" target="_blank" rel="noreferrer">Ph.D. dissertation</a> was on turbulence modeling for Rayleigh-Taylor instability, and I also worked on forced turbulence simulations for tuning Reynolds Stress models.
+                  <br><br>
+                  In my free time, I enjoy drawing, gardening, knitting, and 3D printing.
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="header-text header-left" id="research"><span>Research</span></div>
 
-<div class ="content-container" id="main">
-  <div class="header-text header-left" id="about"><span>About Me</span></div>
+      <div class="table-container">
+        <table class="responsive-table">
+          <tbody>
+            <tr>
+              <td>
+                <div class="content-text">
+                  My research interests are in computational fluid dynamics and scientific machine learning.
+                  My postdoctoral research focuses on machine learning methods for computational modeling of the heart.
+                  My Ph.D. thesis focused on turbulence modeling for Rayleigh-Taylor instability using the Macroscopic Forcing Method.
+                  <br><br>
+                  For a full list of my publications, please see my <a href="https://scholar.google.com/citations?user=UO0OaCUAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>.
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <div class="table-container">
-  <table class="responsive-table">
-    <tbody>
-      <tr>
-        <td>
-        <div id="about-text" class="content-text">
-          <div id="about-img"></div>
-          I am a motivated scientific problem solver with interests in scientific machine learning and computational modeling.
-          <BR><BR>
-          Currently, I am a Postdoctoral Research Associate at Washington University in St. Louis with the <a href="https://sites.wustl.edu/konglab/">Computational Cardiac Mechanics and AI Lab</a>, where I am working on scientific machine learning for cardiovascular flow.
-          I am developing uncertainty-aware and physics-informed machine learning methods for cardiovascular flow reconstruction from echocardiograms.  
-          The goal of this work is to enhance physical information obtained from medical imaging that can better inform patient-specific diagnosis and treatment planning.
-	        <BR><BR>
-          I earned my B.S. in mechanical engineering at UC Berkeley in 2019, where I studied aerodynamic shape optimization with deep learning in the <a href="https://cfd.me.berkeley.edu/" target="_blank">CFD Lab</a>.
-          At Stanford University, I earned my M.S. in 2021 and my Ph.D. in 2025 under the advisement of <a href="https://manigroup.sites.stanford.edu/" target="_blank">Ali Mani</a>.
-	        My <a href="http://purl.stanford.edu/gx711gy3634" target="_blank">Ph.D. dissertation</a> was on turbulence modeling for Rayleigh-Taylor instability, and I also worked on forced turbulence simulations for tuning Reynolds Stress models.
-          <BR><BR>
-          In my free time, I enjoy drawing, gardening, knitting, and 3D printing.
-        </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="header-text header-left" id="research"><span>Research</span></div>
-
-  <div class="table-container">
-  <table class="responsive-table">
-    <tbody>
-      <tr>
-        <td>
-          <div class="content-text">
-            My research interests are in computational fluid dynamics and scientific machine learning.
-            My postdoctoral research focuses on machine learning methods for computational modeling of the heart.
-            My Ph. D. thesis focused on turbulence modeling for Rayleigh-Taylor instability using the Macroscopic Forcing Method.
-
-            <BR><BR>
-
-            For a full list of my publications, please see my <a href="https://scholar.google.com/citations?user=UO0OaCUAAAAJ&hl=en" target="_blank">Google Scholar</a>.
-
-          </div>
-        </td>
-      </tr>
-      </tbody>
-  </table>
-  </div>
-
-  <div class="table-container">
-  <table class="responsive-table research-table">
-    <tbody>
+      <div class="table-container research-block">
         <h2 class="table-hdr">Diffusion-based Machine Learning for Cardiovascular Flow Reconstruction</h2>
-                <tr>
-                  <td><div class="research-img" id="research-img-1"></div></td>
-                  <td>
-                  <div class="content-text">
-                    Echocardiography (echo) is a medical imaging technique that allows for real-time visualization of cardiac structures at the bedside.
-                    Coupled with color Doppler, echo provides useful information about the hemodynamics in the heart that is commonly used by clinicians for diagnosis and treatment planning.
-                    However, echo and Doppler images are often noisy and sparse, leading to substantial uncertainties in blood flow measurements.
-                    <BR><BR>
-                    This work aims to reconstruct full spatio-temporal flow fields in the heart from echo measurements using machine learning.
-                    We employ a diffusion-based probabilistic model to allow for uncertainty quantification of the flow predictions.
-                    Additionally, we enforce physical constraints to ensure the generated fields are consistent with not only the echo data but also the governing Navier-Stokes equations.
-                  </td>
-                </tr>
-            </div>
-      </tbody>
-  </table>
-  </div>
-          
-  <div class="table-container">
-  <table class="responsive-table research-table">
-    <tbody>  
+        <table class="responsive-table research-table">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  class="research-img"
+                  src="assets/images/echo_diffusion.png"
+                  alt="Flow reconstruction visualization"
+                >
+              </td>
+              <td>
+                <div class="content-text">
+                  Echocardiography (echo) is a medical imaging technique that allows for real-time visualization of cardiac structures at the bedside.
+                  Coupled with color Doppler, echo provides useful information about the hemodynamics in the heart that is commonly used by clinicians for diagnosis and treatment planning.
+                  However, echo and Doppler images are often noisy and sparse, leading to substantial uncertainties in blood flow measurements.
+                  <br><br>
+                  This work aims to reconstruct full spatio-temporal flow fields in the heart from echo measurements using machine learning.
+                  We employ a diffusion-based probabilistic model to allow for uncertainty quantification of the flow predictions.
+                  Additionally, we enforce physical constraints to ensure the generated fields are consistent with not only the echo data but also the governing Navier-Stokes equations.
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container research-block">
         <h2 class="table-hdr">Non-locality in Turbulent Rayleigh-Taylor Instability</h2>
-                <tr>
-                  <td><div class="research-img" id="research-img-2"></div></td>
-                  <td>
-                  <div class="content-text">
-                    Rayleigh-Taylor (RT) instability&mdash;when a light fluid is accelerated into a heavy fluid&mdash;can occur in inertial confinement fusion (ICF) and significantly reduce energy output.
-                    Thus, it is important to accurately model RT mixing during the ICF experiment design process.
-                    This work investigates the importance of non-locality in modeling turbulent RT mixing using the Macroscopic Forcing Method, a numerical approach to determine turbulent closure operators from high-fidelity simulations.
+        <table class="responsive-table research-table">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  class="research-img"
+                  src="assets/images/nonlocality_rti.png"
+                  alt="Rayleigh-Taylor instability research visualization"
+                >
+              </td>
+              <td>
+                <div class="content-text">
+                  Rayleigh-Taylor (RT) instability, when a light fluid is accelerated into a heavy fluid, can occur in inertial confinement fusion (ICF) and significantly reduce energy output.
+                  Thus, it is important to accurately model RT mixing during the ICF experiment design process.
+                  This work investigates the importance of non-locality in modeling turbulent RT mixing using the Macroscopic Forcing Method, a numerical approach to determine turbulent closure operators from high-fidelity simulations.
+                  <br><br>
+                  <b>Related publications:</b>
+                  <ul class="pub-list">
+                    <li>
+                      <b>Lavacot, D. L. O.-L.</b>, Mani, A., and Morgan, B.
+                      <a href="https://doi.org/10.1103/svjh-8pzl" target="_blank" rel="noreferrer">Atwood effects on nonlocality of the scalar transport closure in Rayleigh-Taylor mixing.</a>
+                      2025. Phys. Rev. Fluids.
+                    </li>
+                    <li>
+                      <b>Lavacot, D. L. O.-L.</b>, Liu, J., Williams, H., Morgan, B., and Mani, A.
+                      <a href="https://doi.org/10.1017/jfm.2024.323" target="_blank" rel="noreferrer">Non-locality of mean scalar transport in two-dimensional Rayleigh-Taylor instability using the macroscopic forcing method.</a>
+                      2024. J. Fluid Mech.
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-                    <BR><BR>
-                      <b>Related publications::</b>
-                      <ul class="pub-list">
-                        <li>
-                          <b>Lavacot, D. L. O.-L.</b>, Mani, A., and Morgan, B.
-                          <a href="https://doi.org/10.1103/svjh-8pzl" target="_blank">Atwood effects on nonlocality of the scalar transport closure in Rayleigh-Taylor mixing.</a> 
-                          2025. Phys. Rev. Fluids.
-                        </li>
-                        <li>
-                          <b>Lavacot, D. L. O.-L.</b>, Liu, J., Williams, H., Morgan, B., and Mani, A.
-                          <a href=" https://doi.org/10.1017/jfm.2024.323" target="_blank">Non-locality of mean scalar transport in two-dimensional Rayleigh–Taylor instability using the macroscopic forcing method.</a> 
-                          2024. J. Fluid Mech.
-                        </li>
-                      </ul>
-                        
-                  </div>
-                  </td>
-                </tr>
-      </tbody>
-  </table>
-  </div>
-          
-            
-  <div class="table-container">
-  <table class="responsive-table research-table">
-    <tbody>  
-      <h2 class="table-hdr">Aerodynamic Shape Optimization using Deep Learning</h2>
-                <tr>
-                  <td><div class="research-img" id="research-img-3"></div></td>
-                  <td>
-                  <div class="content-text">
-                    Physical data usually exist on irregular grids due to complex geometries encountered in real world problems.
-                    In this work, we present the Deep Differentiable Shape Layer (DDSL), which leverages the non-uniform Fourier transform to facilitate deep learning on arbitrary geometries.
-                    I derived the analytical derivative for the transform, to allow for fast backpropagation for neural network training as well as shape optimization after training.
-                    I demonstrated the utility of the DDSL in the optimization of airfoil shapes for low lift-drag ratios.
+      <div class="table-container research-block">
+        <h2 class="table-hdr">Aerodynamic Shape Optimization using Deep Learning</h2>
+        <table class="responsive-table research-table">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  class="research-img"
+                  src="assets/images/ddsl_airfoil.gif"
+                  alt="Airfoil optimization visualization"
+                >
+              </td>
+              <td>
+                <div class="content-text">
+                  Physical data usually exist on irregular grids due to complex geometries encountered in real world problems.
+                  In this work, we present the Deep Differentiable Shape Layer (DDSL), which leverages the non-uniform Fourier transform to facilitate deep learning on arbitrary geometries.
+                  I derived the analytical derivative for the transform, to allow for fast backpropagation for neural network training as well as shape optimization after training.
+                  I demonstrated the utility of the DDSL in the optimization of airfoil shapes for low lift-drag ratios.
+                  <br><br>
+                  <b>Related publications:</b>
+                  <ul class="pub-list">
+                    <li>
+                      Jiang, C., <b>Lansigan, D.</b>, Niessner, M., and Marcus, P.
+                      <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Jiang_DDSL_Deep_Differentiable_Simplex_Layer_for_Learning_Geometric_Signals_ICCV_2019_paper.html" target="_blank" rel="noreferrer">DDSL: Deep Differentiable Simplex Layer for Learning Geometric Signals.</a>
+                      2019. Proceedings of ICCV.
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-                    <BR><BR>
-                      <b>Related publications::</b>
-                      <ul class="pub-list">
-                        <li>
-                          Jiang, C., <b>Lansigan, D.</b>, Niessner, M., and Marcus, P.
-                          <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Jiang_DDSL_Deep_Differentiable_Simplex_Layer_for_Learning_Geometric_Signals_ICCV_2019_paper.html" target="_blank">DDSL: Deep Differentiable Simplex Layer for Learning Geometric Signals.</a> 
-                          2019. Proceedings of ICCV.
-                        </li>
-                      </ul>
-                  </div>
-                  </td>
-                </tr>
-      </tbody>
-  </table>
-  </div>
-                
+      <div class="header-text header-left" id="projects"><span>3D Printing</span></div>
 
+      <div class="table-container">
+        <table class="responsive-table" id="project-table">
+          <tbody>
+            <tr>
+              <td class="image-cell" id="project-cell-1">
+                <div class="image-slider"></div>
+                <div class="dot-container"></div>
+              </td>
+              <td class="text-cell" id="project-cell-2">
+                <div class="text-content">
+                  <h2 class="header-content"></h2>
+                  <div class="img-content"></div>
+                  <div class="body-content"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="header-text header-left" id="skills"><span>Skills</span></div>
 
-    <script>
-        const searchInput = document.getElementById('research-search-input');
-        const items = document.querySelectorAll('.item');
-        const researchList = document.getElementById('research-list');
-        const clickableImages = document.querySelectorAll('.clickable-image');
+      <div class="skills-grid">
+        <img class="skill-img" src="assets/images/python.png" alt="Python">
+        <img class="skill-img" src="assets/images/matlab.png" alt="MATLAB">
+        <img class="skill-img" src="assets/images/cpp.png" alt="C++">
+        <img class="skill-img" src="assets/images/github.png" alt="GitHub">
+        <img class="skill-img" src="assets/images/pytorch.png" alt="PyTorch">
+        <img class="skill-img" src="assets/images/sv.png" alt="Star Visions">
+        <img class="skill-img" src="assets/images/star-ccmp.jpeg" alt="STAR-CCM+">
+        <img class="skill-img" src="assets/images/openfoam.png" alt="OpenFOAM">
+        <img class="skill-img" src="assets/images/solidworks.png" alt="SolidWorks">
+        <img class="skill-img" src="assets/images/cura.png" alt="Cura">
+        <img class="skill-img" src="assets/images/flashprint.jpg" alt="FlashPrint">
+        <img class="skill-img" src="assets/images/html_css_js.png" alt="HTML, CSS, and JavaScript">
+        <img class="skill-img" src="assets/images/illustrator.png" alt="Adobe Illustrator">
+      </div>
 
-        // Function to add search term to search input
-        function addSearchTerm(event) {
-           const searchTerm = event.target.getAttribute('data-search');
-           searchInput.value = searchTerm;
-           searchInput.focus();  // Optional: focus on the input field after setting the value
+      <div class="back-to-top"><span id="top-button"><a href="#top">Back to Top</a></span></div>
 
-           // Create and dispatch the 'input' event
-          const inputEvent = new Event('input', { bubbles: true });
-          searchInput.dispatchEvent(inputEvent);
-        }
-
-        // Function to add border/background effect
-        function addEffect() {
-            searchInput.style.borderColor = 'var(--accent3)';
-            searchInput.style.backgroundColor = 'var(--accent4-50)';
-            researchList.style.borderColor = 'var(--accent3)';
-            researchList.style.backgroundColor = 'var(--accent4-50)';
-        }
-
-        // Function to remove border/background effect
-        function removeEffect() {
-            // Check if the search input is not in focus
-            if (!searchInput.matches(':focus')) {
-                searchInput.style.borderColor = '';
-                searchInput.style.backgroundColor = '';
-                researchList.style.borderColor = '';
-                researchList.style.backgroundColor = '';
-            }
-        }
-
-        // Get input and show results
-        function readInput() {
-
-        }
-
-        // Add click event listeners to all clickable images
-        clickableImages.forEach(image => {
-           image.addEventListener('click', addSearchTerm);
-        });
-
-        // Trigger focus event when search input is clicked
-        searchInput.addEventListener('click', function() {
-            searchInput.focus();
-        });
-
-        // Add event listeners
-        searchInput.addEventListener('mouseenter', addEffect);
-        searchInput.addEventListener('mouseleave', removeEffect);
-        searchInput.addEventListener('focus', addEffect);
-        searchInput.addEventListener('blur', removeEffect);
-
-        // Add event listener to detect clicks outside search input
-        document.body.addEventListener('click', function(event) {
-            // Check if the clicked element is not the search input
-            if (event.researchList !== searchInput) {
-                removeEffect();
-            }
-        });
-
-        searchInput.addEventListener('input', function() {
-            const query = searchInput.value.toLowerCase();
-            if (query === "") {
-                items.forEach(item => {
-                    item.style.display = 'block';
-                });
-            } else {
-                items.forEach(item => {
-                    const itemName = item.textContent.toLowerCase();
-                    if (itemName.includes(query)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            }
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.item');
-            const specificAuthors = ['D. Lavacot', 'D. Lansigan'];
-
-
-            items.forEach(itemDiv => {
-                const authors = itemDiv.getAttribute('authors');
-                const year = itemDiv.getAttribute('year');
-                const title = itemDiv.getAttribute('title');
-                const journal = itemDiv.getAttribute('journal');
-                const link = itemDiv.getAttribute('link');
-
-                // Create an array of author names
-                const authorNames = authors.split(', ');
-
-                // Format the authors, bold the specific author
-                const formattedAuthors = authorNames.map(author => {
-                    if (specificAuthors.includes(author)) {
-                        return `<span class="ref-author-highlight">${author}</span>`;
-                    }
-                    return author;
-                }).join(', ');
-
-                // Format the title
-                const formattedTitle = `<span class="ref-title">${title}</span>`;
-
-                // Format the journal
-                const formattedJournal = `<span class="ref-journal">${journal}</span>`;
-
-                // Set the formatted content inside the div
-                itemDiv.innerHTML = `${formattedAuthors}. (${year}). <a href="${link}" target="_blank">${formattedTitle}</a>. ${formattedJournal}.`;
-            });
-        });
-    </script>
-
-
-
-  <div class="header-text header-left" id="projects"><span>3D Printing</span></div>
-
-  <div class="table-container">
-  <table class="responsive-table" id="project-table">
-    <tbody>
-      <tr>
-        <td class="image-cell" id="project-cell-1">
-          <div class="image-slider">
-            <!-- Images and dots will be dynamically added here -->
-          </div>
-          <div class="dot-container">
-            <!-- Dots will be dynamically added here -->
-          </div>
-        </td>
-        <td class="text-cell" id="project-cell-2">
-          <div class="text-content">
-            <h2 class="header-content"></h2>
-            <p class="img-content"></p>
-            <p class="body-content"></p>
-            <!-- Text content will be dynamically updated here -->
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+      <div id="footer" class="footer-container">
+        <img src="assets/images/info-black.png" class="small-icon" alt="Info icon">
+        The splash animation is of a triply-periodic forced turbulence simulation.
+        The frames traverse in the y-direction through x-z planes, and the color represents velocity magnitude.
+        I ran this simulation using a pseudo-spectral LES code.
+      </div>
+    </div>
   </div>
 
-
-
-  <script>
-    $(document).ready(function() {
-      // Image URLs
-      var images = [
-          'assets/images/pilot.jpg',
-          'assets/images/mid-century-pot.jpg',
-          'assets/images/kettle-can.jpg',
-          'assets/images/coffee-pot.jpg',
-          'assets/images/stunt-jump.jpg'
-      ]; // Array of image URLs
-      var headers = [
-      'Wall-mounted Pots',
-      'Mid-century Desktop Pot Stand',
-      '\"Kettle\" Watering Can',
-      'Self-watering \"Pourover\" Pot',
-      'Stunt Jump']; // Array of associated headers
-      var content = [
-      'I designed wall-mounted pots with both the indoor plant enthusiast and 3D printer in mind. ' +
-        'These pots have dovetail mounts that can be screwed into the wall or adhered to the wall using Command Strips (a useful feature for renters). ' +
-        'The pots slide in and out of the mounts easily, which is convenient for watering and care. ' +
-        'An important feature of the pots is the removable bottom, which twists on and off, allowing proper drainage and preventing root rot. ' +
-        'On top of it all, the pots print without support, making 3D prints a breeze! ' +
-        '<BR><BR>I\'ve made several different designs of these wall-mounted pots. ' +
-        'I print them all using Polymaker Polyterra, a high-quality bioplastic-based filament with a nice matte finish.',
-      'I wanted to add a little modern flair on the pot housing my baby pilea, so I designed and printed this mid-century pot stand. ' +
-        'It\'s the perfect size for a desktop, and it looks cute and chic in Polyterra filament!',
-      'I make coffee with my Stagg kettle nearly every morning, so I decided to make a mini one to water my plants with! ' +
-        'Modeled after the Stagg, this desktop watering can was 3D printed using Polymaker Polyterra filament. ' +
-        'I sanded down the handle and knob to make them look more like wood. ' +
-        'Everything is held together with PLA Pro pegs and superglue, and a thin layer of epoxy coats the inside to make it watertight.',
-      'Continuing with my coffee and plant obsession, I designed and printed this pourover-inspired pot. ' +
-        'The pot is designed to be self-watering, so the reservoir holds water for the soil and plant to absorb over time. ' +
-        'The reservoir has a thin layer of epoxy on the inside to make it watertight, and there is a cotton wick attached to the inner pot to aid with water absorption. ' +
-        'Water can be poured directly into the spout on the side, or the inner pot can be removed for easier access to the reservoir. ',
-      'Stunt Jump is a class I helped design for SeeME, an outreach program for teaching middle school to early high school students about mechanical engineering concepts. ' +
-        'In this class, we taught students about how engineers use computer simulations for design through a hands-on Hot Wheels activity. ' +
-        'Students were tasked with designing a track for a stunt jump, where a Hot Wheels car had to jump through pre-specified hoops. ' +
-        'The challenge was to do the entire design using a computer, and their designs are informed by physics we teach them in the classroom. ' +
-        '<BR><BR>For this class, I designed and 3D printed custom wall mounts for the Hot Wheels tracks. ' +
-        'I designed the mounts to attach to the tracks using the existing track-to-track connection mechanism. ' +
-        'I attached magnets to the mounts so that they could stick to a whiteboard and be moved around easily by the students. ' +
-        'This allowed us to efficiently change the tracks throughout the class and visualize the accuracy of the computer simulation by projecting it onto the tracks on the board. ' +
-        '<BR><BR>In addition to 3D printing material for the class, I also assisted in designing the lesson plan and the computer simulation code and GUI.'
-       ]; // Array of associated texts
-      var textImages = [
-      ['assets/images/sheep.jpg','assets/images/elephant.jpg','assets/images/hanging-pot.gif'],
-      [],
-      ['assets/images/kettle-can-2.jpg','assets/images/kettle-can-3.jpg','assets/images/water-the-pot.gif'],
-      ['assets/images/coffee-pot-2.jpg','assets/images/coffee-pot-vid.gif','assets/images/coffee-pot-vid-2.gif'],
-      ['assets/images/stunt-jump-wall-mount.jpg','assets/images/stunt-jump-2.gif','assets/images/stunt-jump-1.gif']
-      ];
-      var currentIndex = 0; // Current index of the image being displayed
-
-      // Populate the image slider with images
-      for (var i = 0; i < images.length; i++) {
-        $('.image-slider').append('<div class="image-slide" style="background-image: url(' + images[i] + ');background-size: cover;background-position: center;opacity:0"></div>');
-        $('.dot-container').append('<span class="dot" data-index="' + i + '"></span>');
-      }
-
-      // Function to display the next image
-      function showNextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        displayImage(currentIndex);
-      }
-
-      // Function to display the previous image
-      function showPreviousImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          displayImage(currentIndex);
-      }
-
-// Function to display the image at a specific index
-function displayImage(index) {
-  $('.image-slide.active').removeClass('active').stop().animate({ opacity: 0 }, 500);
-  $('.image-slide:eq(' + index + ')').addClass('active').stop().css('opacity', 0).animate({ opacity: 1 }, 500);
-
-  // Clear previous content in .img-content
-  $('.img-content').empty();
-
-  // Append image HTML for each image URL at the current index
-  for (var n = 0; n < textImages[index].length; n++) {
-    var newImageHtml = '<div style="background-image: url(\'' + textImages[index][n] + '\')" class="text-cell-img"></div>';
-    $('.img-content').append(newImageHtml);
-  }
-
-  // Set the text content in the .body-content element
-  var newContentHtml = content[index];
-  $('.body-content').css('opacity', 0).html(newContentHtml).animate({ opacity: 1 }, 500);
-
-  // Set the header content
-  var newHeaderHtml = headers[index];
-  $('.header-content').css('opacity', 0).html(newHeaderHtml).animate({ opacity: 1 }, 500);
-
-  // Fade out existing images in .text-content
-  $('.text-content .text-cell-img').remove();
-
-  // Append new images and fade them in
-  for (var i = 0; i < textImages[index].length; i++) {
-    var imageUrl = textImages[index][i];
-    var newImage = $('<div class="text-cell-img"></div>').css('background-image', 'url(' + imageUrl + ')').hide();
-    $('.img-content').append(newImage);
-    newImage.fadeIn(500);
-  }
-
-  // Scroll the .text-cell to the top
-  $('.text-cell').scrollTop(0);
-
-  // Update active dot
-  $('.dot').removeClass('active-dot');
-  $('.dot[data-index="' + index + '"]').addClass('active-dot');
-}
-
-
-
-      // Show the first image and associated text
-      displayImage(currentIndex);
-
-      // Handle dot clicks
-      $('.dot').click(function() {
-        var index = $(this).data('index');
-        currentIndex = index;
-        displayImage(index);
-      });
-
-      // Handle image clicks
-      $('.image-slide').click(function() {
-        showNextImage();
-      });
-
-       // Handle swipe gestures
-       $('.image-slider').on('touchstart', function(event) {
-           startX = event.touches[0].clientX;
-       });
-
-       $('.image-slider').on('touchmove', function(event) {
-           endX = event.touches[0].clientX;
-       });
-
-       $('.image-slider').on('touchend', function(event) {
-           var deltaX = endX - startX;
-           if (deltaX > 50) {
-               // Swipe right
-               showPreviousImage();
-           } else if (deltaX < -50) {
-               // Swipe left
-               showNextImage();
-           }
-       });
-    });
-
-  </script>
-
-
-  <div class="header-text header-left" id="skills"><span>Skills</span></div>
-  <BR>
-  <center>
-  <img class="skill-img" src="assets/images/python.png">
-  <img class="skill-img" src="assets/images/matlab.png">
-  <img class="skill-img" src="assets/images/cpp.png">
-  <img class="skill-img" src="assets/images/github.png">
-  <img class="skill-img" src="assets/images/pytorch.png">
-  <img class="skill-img" src="assets/images/sv.png">
-  <img class="skill-img" src="assets/images/star-ccmp.jpeg">
-  <img class="skill-img" src="assets/images/openfoam.png">
-  <img class="skill-img" src="assets/images/solidworks.png">
-  <img class="skill-img" src="assets/images/cura.png">
-  <img class="skill-img" src="assets/images/flashprint.jpg">
-  <img class="skill-img" src="assets/images/html_css_js.png">
-  <img class="skill-img" src="assets/images/illustrator.png">
-  </center>
-<BR><BR>
-<center><span id="top-button"><a href="#top">Back to Top</a></span><center>
-
-
-<BR><BR><BR><BR><BR><BR>
-
-<div id="footer" class="footer-container">
-<img src="assets/images/info-black.png" class="small-icon">
-The splash animation is of a triply-periodic forced turbulence simulation.
-The frames traverse in the y-direction through x-z planes, and the color represents velocity magnitude.
-I ran this simulation using a pseudo-spectral LES code.
-</div>
-
-</div>
-
-</div>
-<!--
-<div id="footer-container">
-  <center>
-      <span id='footer-text'>Website by Dana Lansigan</span>
-      <BR>
-      <a href='https://www.stanford.edu/' target="_blank">
-        <img src="assets/images/stanford-logo.png" id="footer-logo">
-      </a>
-    </center>
-</div>
--->
-
-
-
-
-<script src="assets/js/script.js"></script>
-
-</BODY>
-</HTML>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
