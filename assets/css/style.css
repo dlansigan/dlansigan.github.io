@@ -249,7 +249,7 @@ div::-webkit-scrollbar-button {
 }
 
 .icon-button:hover {
-  filter: invert(10%) sepia(8%) saturate(837%) hue-rotate(47deg) brightness(86%) contrast(90%);
+  filter: invert(45%) sepia(15%) saturate(581%) hue-rotate(56deg) brightness(92%) contrast(87%) opacity(50%);
   mix-blend-mode: normal;
 }
 
@@ -273,21 +273,22 @@ div::-webkit-scrollbar-button {
 }
 
 .button-container {
-  display: inline;
+  display: inline-block;
   margin: 1em;
   padding: 0.25em 1em;
+  border-radius: 0.25em;
+  background-color: transparent;
   font-family: var(--hdr-font);
   font-size: 1em;
   font-weight: 600;
   line-height: 2em;
   text-align: center;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-#splash-text .button-container:hover {
-  border-radius: 0.25em;
-  background: var(--accent3);
+#splash-text .button:hover .button-container {
+  background-color: var(--accent3-50);
 }
 
 #info-button {
