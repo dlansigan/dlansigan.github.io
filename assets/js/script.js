@@ -1,10 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const mainContainer = document.querySelector("#main-container");
+  const splashContainer = document.querySelector("#splash-container");
+  const stickyHeader = document.querySelector("#sticky-header");
   const slider = document.querySelector(".image-slider");
   const dots = document.querySelector(".dot-container");
   const header = document.querySelector(".header-content");
   const media = document.querySelector(".img-content");
   const body = document.querySelector(".body-content");
   const textCell = document.querySelector(".text-cell");
+
+  function updateStickyHeader() {
+    if (!mainContainer || !splashContainer || !stickyHeader) {
+      return;
+    }
+
+    const revealPoint = Math.max(
+      splashContainer.offsetTop + splashContainer.offsetHeight - stickyHeader.offsetHeight,
+      0
+    );
+    const isVisible = mainContainer.scrollTop >= revealPoint;
+
+    stickyHeader.classList.toggle("is-visible", isVisible);
+  }
+
+  if (mainContainer && splashContainer && stickyHeader) {
+    updateStickyHeader();
+    mainContainer.addEventListener("scroll", updateStickyHeader, { passive: true });
+    window.addEventListener("resize", updateStickyHeader);
+  }
 
   if (!slider || !dots || !header || !media || !body || !textCell) {
     return;

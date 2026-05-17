@@ -4,21 +4,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Dana Lynn Lavacot</title>
 </head>
 <body>
   <div id="main-container">
     <div id="top"></div>
+    <header id="sticky-header">
+      <div id="sticky-header-inner">
+        <a href="#top" id="sticky-name">Dana Lavacot</a>
+
+        <div id="sticky-nav">
+          <div class="sticky-social-row">
+            <a href="mailto: dlol@stanford.edu"><img src="assets/images/email.png" class="sticky-social-icon icon-button" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/dlansigan/" target="_blank" rel="noreferrer"><img src="assets/images/linkedin.png" class="sticky-social-icon icon-button" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/thelittle3dprints/" target="_blank" rel="noreferrer"><img src="assets/images/insta.png" class="sticky-social-icon icon-button" alt="Instagram"></a>
+          </div>
+
+          <!-- <nav class="sticky-button-row" aria-label="Primary">
+            <a href="#about" class="sticky-link">About</a>
+            <a href="#research" class="sticky-link">Research</a>
+            <a href="#projects" class="sticky-link">3D Printing</a>
+            <a href="#skills" class="sticky-link">Skills</a>
+            <a href="assets/docs/dlavacot-CV.pdf" target="_blank" rel="noreferrer" class="sticky-link">CV</a>
+          </nav> -->
+        </div>
+      </div>
+    </header>
 
     <div id="splash-container">
-      <video autoplay muted loop playsinline id="splash-video">
+      <!-- <video autoplay muted loop playsinline id="splash-video">
         <source src="assets/videos/splash.mp4" type="video/mp4">
         Your browser does not support the video tag.
-      </video>
+      </video> -->
+      <img
+        id="splash-img"
+        src="assets/images/header.jpg"
+        alt="Dana Lavacot portrait"
+      >
       <div id="splash-text">
-        <h1 class="block-text">DANA LAVACOT</h1>
+        <h1 class="block-text">Dana Lavacot</h1>
         <p>Postdoctoral Researcher @ WashU</p>
         <p>Stanford Ph.D., UC Berkeley B.S.</p>
         <p>Computational Fluid Dynamicist</p>
@@ -53,11 +80,11 @@
             <tr>
               <td>
                 <div id="about-text" class="content-text">
-                  <img
+                  <!-- <img
                     id="about-img"
                     src="assets/images/header.jpg"
                     alt="Dana Lavacot portrait"
-                  >
+                  > -->
                   I am a motivated scientific problem solver with interests in scientific machine learning and computational modeling.
                   <br><br>
                   Currently, I am a Postdoctoral Research Associate at Washington University in St. Louis with the <a href="https://sites.wustl.edu/konglab/" target="_blank" rel="noreferrer">Computational Cardiac Mechanics and AI Lab</a>, where I am working on scientific machine learning for cardiovascular flow.

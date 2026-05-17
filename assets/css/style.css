@@ -5,12 +5,12 @@
   --accent1-50: rgba(50, 50, 50, 0.5);
   --accent2: rgba(255, 255, 255, 1);
   --accent2-50: rgba(238, 236, 229, 0.5);
-  --accent3: rgba(180, 200, 160, 1);
-  --accent3-50: rgba(180, 200, 160, 0.5);
+  --accent3: rgba(61, 92, 50, 1);
+  --accent3-50: rgba(61, 92, 50, 0.5);
   --accent4: rgba(255, 255, 255, 1);
   --accent4-50: rgba(255, 255, 255, 0.5);
-  --hdr-font: "Poppins";
-  --content-font: "Poppins";
+  --hdr-font: "Merriweather";
+  --content-font: "Open Sans";
 }
 
 body {
@@ -96,57 +96,143 @@ div::-webkit-scrollbar-button {
   -moz-box-sizing: border-box;
 }
 
+#sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(-1rem);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+#sticky-header.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#sticky-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  width: 6in;
+  min-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--accent3);
+  padding-bottom: 0.5em;
+}
+
+#sticky-name {
+  color: var(--main);
+  font-family: var(--hdr-font);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  /* text-transform: uppercase; */
+}
+
+#sticky-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.9rem;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
+.sticky-social-row,
+.sticky-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+}
+
+.sticky-social-icon {
+  height: 1.25em;
+  filter: brightness(0) saturate(100%) opacity(0.8);
+  mix-blend-mode: normal;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+.sticky-link {
+  color: var(--main);
+  font-family: var(--hdr-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.sticky-link:hover,
+#sticky-name:hover {
+  color: var(--accent3);
+}
+
 #splash-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
   width: 100%;
   min-width: 1100px;
-  min-height: 800px;
-  height: 80vh;
+  min-height: 620px;
+  height: 65vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 #splash-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  display: none;
+}
+
+#splash-img {
+  flex-shrink: 0;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
   object-fit: cover;
-  transform: translate(-50%, -50%);
 }
 
 #splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 100;
 }
 
 #splash-text h1 {
   margin: 0;
+  color: var(--main);
   font-family: var(--hdr-font);
-  font-size: 8em;
-  font-weight: 700;
-  mix-blend-mode: difference;
+  font-size: 5em;
+  font-weight: 500;
 }
 
 #splash-text p {
   margin: 0;
-  color: var(--accent4);
-  font-family: var(--hdr-font);
+  color: var(--main);
+  font-family: var(--content-font);
   font-size: 1em;
   font-style: italic;
   font-weight: 200;
   line-height: 2em;
-  mix-blend-mode: difference;
 }
 
 .block-text {
-  color: var(--accent4);
+  color: var(--main);
   font-weight: 900;
 }
 
@@ -167,8 +253,15 @@ div::-webkit-scrollbar-button {
   mix-blend-mode: normal;
 }
 
+.social-icon,
+.sticky-social-icon,
+#info-button img {
+  transition: filter 0.25s ease, mix-blend-mode 0.25s ease;
+  -webkit-transition: filter 0.25s ease, mix-blend-mode 0.25s ease;
+}
+
 .button {
-  color: var(--accent4);
+  color: var(--main);
 }
 
 .button:hover {
@@ -192,14 +285,9 @@ div::-webkit-scrollbar-button {
   -webkit-transition: 0.5s;
 }
 
-#splash-text .button-container {
-  mix-blend-mode: difference;
-}
-
 #splash-text .button-container:hover {
   border-radius: 0.25em;
   background: var(--accent3);
-  mix-blend-mode: normal;
 }
 
 #info-button {
@@ -213,12 +301,11 @@ div::-webkit-scrollbar-button {
 #info-button img {
   width: 100%;
   height: 100%;
-  mix-blend-mode: difference;
 }
 
 .content-container {
   position: relative;
-  width: 80%;
+  width: 6in;
   min-width: 1100px;
   height: auto;
   margin: auto;
@@ -286,10 +373,24 @@ div::-webkit-scrollbar-button {
   padding: 0.5em 0;
 }
 
+.research-block .table-hdr {
+  margin-left: 0.2em;
+  padding-left: 0;
+  text-align: left;
+}
+
 .content-text {
   font-size: 1.25em;
   font-weight: 200;
   line-height: 2em;
+}
+
+#about,
+#research,
+#projects,
+#skills,
+#footer {
+  scroll-margin-top: 6rem;
 }
 
 #about-img {
@@ -492,18 +593,27 @@ div::-webkit-scrollbar-button {
   }
 
   .content-container {
-    width: 90vw;
+    width: 80vw;
     min-width: 0;
+  }
+
+  #sticky-header {
+    padding: 1rem 0 0;
+  }
+
+  #sticky-header-inner {
+    width: 80vw;
+    min-width: 0;
+  }
+
+  .research-img {
+    width: 20em;
+    height: 20em;
   }
 
   #about-img {
     width: 18em;
     height: 18em;
-  }
-
-  .research-img {
-    width: 15em;
-    height: 15em;
   }
 
   #project-cell-1 {
@@ -543,8 +653,52 @@ div::-webkit-scrollbar-button {
   }
 
   .content-container {
-    width: 90vw;
+    width: 80vw;
     min-width: 0;
+  }
+
+  #sticky-header {
+    padding: 0.9rem 1rem 0;
+  }
+
+  #sticky-header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+  }
+
+  #sticky-name {
+    font-size: 1.2rem;
+  }
+
+  #sticky-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    margin-left: auto;
+  }
+
+  .sticky-social-row,
+  .sticky-button-row {
+    justify-content: center;
+    gap: 0.5rem 0.75rem;
+    flex-wrap: nowrap;
+  }
+
+  .sticky-button-row {
+    width: 100%;
+  }
+
+  .sticky-link {
+    font-size: 0.9rem;
+  }
+
+  .research-img {
+    width: 15em;
+    height: 15em;
   }
 
   #about-img {
@@ -552,11 +706,6 @@ div::-webkit-scrollbar-button {
     width: 15em;
     height: 15em;
     margin: 0 auto 1em;
-  }
-
-  .research-img {
-    width: 15em;
-    height: 15em;
   }
 
   .content-text,
@@ -592,7 +741,18 @@ div::-webkit-scrollbar-button {
   }
 
   #splash-container {
+    flex-direction: column;
+    gap: 1.5rem;
     min-width: 300px;
+    min-height: auto;
+    height: auto;
+    padding: 2rem 1rem 2.5rem;
+    overflow: visible;
+  }
+
+  #splash-img {
+    width: 11em;
+    height: 11em;
   }
 
   #project-cell-1 {
