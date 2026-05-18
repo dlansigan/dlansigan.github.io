@@ -425,7 +425,7 @@ div::-webkit-scrollbar-button {
 }
 
 #project-cell-1 {
-  width: 30em;
+  width: 4.5in;
   height: 100%;
   padding-top: 2em;
 }
@@ -478,17 +478,17 @@ div::-webkit-scrollbar-button {
 
 .text-content {
   height: 100%;
-  padding: 0 2em;
+  padding: 0 0.2em;
   overflow-y: auto;
   font-size: 1.5em;
-  font-weight: 200;
+  /* font-weight: 200; */
   line-height: 2em;
 }
 
 .header-content {
   margin-top: 0;
   margin-bottom: 1em;
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -501,9 +501,9 @@ div::-webkit-scrollbar-button {
 
 .text-cell-img {
   display: inline-block;
-  width: 12em;
-  height: 12em;
-  margin: 1em;
+  width: 8em;
+  height: 8em;
+  margin: 0.2em;
   object-fit: cover;
 }
 
