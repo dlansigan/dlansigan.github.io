@@ -157,14 +157,6 @@ div::-webkit-scrollbar-button {
   flex-wrap: nowrap;
 }
 
-.sticky-social-icon {
-  height: 1.25em;
-  filter: brightness(0) saturate(100%) opacity(0.8);
-  mix-blend-mode: normal;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
-}
-
 .sticky-link {
   color: var(--main);
   font-family: var(--hdr-font);
@@ -221,6 +213,16 @@ div::-webkit-scrollbar-button {
   font-weight: 500;
 }
 
+#splash-text .icon {
+  font-size: 1.5em;
+  padding: 0 0.5em;
+}
+
+#sticky-header .icon {
+  font-size: 1.2em;
+  padding: 0 0.2em;
+}
+
 #splash-text p {
   margin: 0;
   color: var(--main);
@@ -240,21 +242,15 @@ div::-webkit-scrollbar-button {
   margin-top: 1.5rem;
 }
 
-.social-icon {
-  height: 1.5em;
-  padding: 0 1em;
-  mix-blend-mode: difference;
+.icon {
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
 
-.icon-button:hover {
-  filter: invert(45%) sepia(15%) saturate(581%) hue-rotate(56deg) brightness(92%) contrast(87%) opacity(50%);
-  mix-blend-mode: normal;
+.icon:hover {
+  color: var(--accent3-50);
 }
 
-.social-icon,
-.sticky-social-icon,
 #info-button img {
   transition: filter 0.25s ease, mix-blend-mode 0.25s ease;
   -webkit-transition: filter 0.25s ease, mix-blend-mode 0.25s ease;
@@ -561,11 +557,6 @@ div::-webkit-scrollbar-button {
   font-size: 1em;
   font-weight: 200;
   text-align: left;
-}
-
-.small-icon {
-  height: 1em;
-  padding: 0 0.1em;
 }
 
 .plain-img {
