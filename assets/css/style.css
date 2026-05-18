@@ -234,7 +234,6 @@ div::-webkit-scrollbar-button {
 }
 
 .block-text {
-  color: var(--main);
   font-weight: 900;
 }
 
@@ -245,6 +244,7 @@ div::-webkit-scrollbar-button {
 .icon {
   transition: 0.25s;
   -webkit-transition: 0.25s;
+  color: var(--accent3);
 }
 
 .icon:hover {
@@ -322,7 +322,7 @@ div::-webkit-scrollbar-button {
   padding-bottom: 0.2em;
   color: var(--accent1);
   font-family: var(--hdr-font);
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 400;
   line-height: 1em;
 }
@@ -709,7 +709,7 @@ div::-webkit-scrollbar-button {
     margin-top: 1em;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .button-container {
