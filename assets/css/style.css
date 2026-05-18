@@ -217,7 +217,7 @@ div::-webkit-scrollbar-button {
   margin: 0;
   color: var(--main);
   font-family: var(--hdr-font);
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 500;
 }
 
@@ -225,7 +225,7 @@ div::-webkit-scrollbar-button {
   margin: 0;
   color: var(--main);
   font-family: var(--content-font);
-  font-size: 1em;
+  font-size: 1.2em;
   font-style: italic;
   font-weight: 200;
   line-height: 2em;
@@ -279,7 +279,7 @@ div::-webkit-scrollbar-button {
   border-radius: 0.25em;
   background-color: transparent;
   font-family: var(--hdr-font);
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
   line-height: 2em;
   text-align: center;
@@ -381,7 +381,7 @@ div::-webkit-scrollbar-button {
 }
 
 .content-text {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 200;
   line-height: 2em;
 }
@@ -633,7 +633,7 @@ div::-webkit-scrollbar-button {
 
   .content-text,
   .text-content {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .square-img {
@@ -711,7 +711,7 @@ div::-webkit-scrollbar-button {
 
   .content-text,
   .text-content {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   .header-text {
@@ -725,7 +725,7 @@ div::-webkit-scrollbar-button {
     display: block;
     margin: 0.2em;
     padding: 0.25em 0.5em;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .header-left,
@@ -738,7 +738,7 @@ div::-webkit-scrollbar-button {
   }
 
   #splash-text p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   #splash-container {
